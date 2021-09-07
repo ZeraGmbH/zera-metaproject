@@ -160,13 +160,6 @@ set(path backend/processing)
 set(deps vf-cpp)
 add_sub_project_deps(${name} ${path} "deps")
 
-
-#applications
-
-
-
-
-
 #Frontend
 #########
 
@@ -232,7 +225,67 @@ add_sub_project_deps(${name} ${path} "deps")
 
 
 
+##zera-libs-and-services
 
+##Libs
+#project zera-scpi
+set(name zera-scpi)
+set(path backend/libs)
+set(deps )
+add_sub_project_deps(${name} ${path} "deps")
+
+#project zera-resourcemanager-protobuf
+set(name zera-resourcemanager-protobuf)
+set(path backend/libs)
+set(deps zera-scpi)
+add_sub_project_deps(${name} ${path} "deps")
+
+#project zera-classes
+set(name zera-classes)
+set(path backend/libs)
+set(deps zera-scpi zera-resourcemanager-protobuf xiqnet vf-component helpers vf-event)
+add_sub_project_deps(${name} ${path} "deps")
+
+
+##Applications
+set(name zera-resourcemanager)
+set(path backend/applications)
+list(APPEND deps zera-scpi zera-resourcemanager-protobuf zera-classes)
+add_sub_project_deps(${name} ${path} "deps")
+
+#project zera-modulemanager
+set(name zera-modulemanager)
+set(path backend/applications)
+set(deps zera-scpi zera-resourcemanager-protobuf zera-classes vf-component helpers vf-event)
+add_sub_project_deps(${name} ${path} "deps")
+
+
+
+##Services
+
+#project com5003d
+set(name com5003d)
+set(path backend/services)
+set(deps zera-scpi zera-resourcemanager-protobuf zera-classes)
+add_sub_project_deps(${name} ${path} "deps")
+
+#project sec1000d
+set(name sec1000d)
+set(path backend/services)
+set(deps zera-scpi zera-resourcemanager-protobuf zera-classes)
+add_sub_project_deps(${name} ${path} "deps")
+
+#project zdsp1d
+set(name zdsp1d)
+set(path backend/services)
+set(deps zera-scpi zera-resourcemanager-protobuf zera-classes)
+add_sub_project_deps(${name} ${path} "deps")
+
+#project mt310s2d
+set(name mt310s2d)
+set(path backend/services)
+set(deps zera-scpi zera-resourcemanager-protobuf zera-classes)
+add_sub_project_deps(${name} ${path} "deps")
 
 
 
