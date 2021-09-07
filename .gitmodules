@@ -73,21 +73,43 @@
 [submodule "backend/extern/PythonScriptingInterface"]
 	path = backend/extern/PythonScriptingInterface
 	url = git@github.com:ZeraGmbH/PythonScriptingInterface.git
-[submodule "backend/processing/vf-export"]
-	path = backend/processing/vf-export
-	url = git@github.com:ZeraGmbH/vf-export.git
-[submodule "backend/processing/vf-files"]
-	path = backend/processing/vf-files
-	url = git@github.com:ZeraGmbH/vf-files.git
-[submodule "backend/processing/vf-logger"]
-	path = backend/processing/vf-logger
-	url = git@github.com:ZeraGmbH/vf-logger.git
-[submodule "backend/processing/vf-script"]
-	path = backend/processing/vf-script
-	url = git@github.com:ZeraGmbH/vf-script.git
-[submodule "middleware/transport/xiqnet"]
-	path = middleware/transport/xiqnet
-	url = git@github.com:ZeraGmbH/xiqnet.git
-[submodule "frontend/libs/vf-gui-translation"]
-	path = frontend/libs/vf-gui-translation
-	url = git@github.com:ZeraGmbH/vf-gui-translation.git
+
+
+
+[submodule "backend/services/com5003d"]
+	path = backend/services/com5003d
+	url = git@github.com:ZeraGmbH/com5003d.git
+	branch = master
+[submodule "backend/services/zdsp1d"]
+	path = backend/services/zdsp1d
+	url = git@github.com:ZeraGmbH/zdsp1d.git
+	branch = v2
+[submodule "backend/services/mt310s2d"]
+	path = backend/services/mt310s2d
+	url = git@github.com:ZeraGmbH/mt310s2d.git
+	branch = master
+[submodule "backend/services/sec1000d"]
+	path = backend/services/sec1000d
+	url = git@github.com:ZeraGmbH/sec1000d.git
+	branch = master
+[submodule "backend/applications/zera-resourcemanager"]
+	path = backend/applications/zera-resourcemanager
+	url = git@github.com:ZeraGmbH/zera-resourcemanager.git
+	branch = master
+[submodule "backend/applications/zera-modulemanager"]
+	path = backend/applications/zera-modulemanager
+	url = git@github.com:ZeraGmbH/zera-modulemanager.git
+	branch = master
+[submodule "backend/libs/zera-classes"]
+	path = backend/libs/zera-classes
+	url = git@github.com:ZeraGmbH/zera-classes.git
+	branch = master
+[submodule "backend/libs/zera-resourcemanager-protobuf"]
+	path = backend/libs/zera-resourcemanager-protobuf
+	url = git@github.com:ZeraGmbH/zera-resourcemanager-protobuf.git
+	branch = master
+[submodule "backend/libs/zera-scpi"]
+	path = backend/libs/zera-scpi
+	url = git@github.com:ZeraGmbH/zera-scpi.git
+	branch = master
+
