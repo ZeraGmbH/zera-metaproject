@@ -1,0 +1,93 @@
+[submodule "middleware/processing/vf-event"]
+	path = middleware/processing/vf-event
+	url = git@github.com:ZeraGmbH/vf-event.git
+[submodule "middleware/processing/vf-component"]
+	path = middleware/processing/vf-component
+	url = git@github.com:ZeraGmbH/vf-component.git
+[submodule "backend/vf-logger"]
+	path = backend/processing/vf-logger
+	url = git@github.com:ZeraGmbH/vf-logger.git
+[submodule "backend/vf-script"]
+	path = backend/processing/vf-script
+	url = git@github.com:ZeraGmbH/vf-script.git
+[submodule "middleware/transport/vf-protobuf"]
+	path = middleware/transport/vf-protobuf
+	url = git@github.com:ZeraGmbH/vf-protobuf.git
+[submodule "middelware/transport/xiqnet"]
+	path = middleware/transport/xiqnet
+	url = git@github.com:ZeraGmbH/xiqnet.git
+[submodule "middleware/transport/vf-net2"]
+	path = middleware/transport/vf-net2
+	url = git@github.com:ZeraGmbH/vf-net2.git
+[submodule "middleware/transport/vf-tcp"]
+	path = middleware/transport/vf-tcp
+	url = git@github.com:ZeraGmbH/vf-tcp.git
+[submodule "middleware/storage/vf-storage-hash"]
+	path = middleware/storage/vf-storage-hash
+	url = git@github.com:ZeraGmbH/vf-storage-hash.git
+[submodule "middleware/api/vf-qml"]
+	path = middleware/api/vf-qml
+	url = git@github.com:ZeraGmbH/vf-qml.git
+[submodule "middleware/utils/helpers"]
+	path = middleware/utils/helpers
+	url = git@github.com:ZeraGmbH/vf-helpers.git
+[submodule "middleware/utils/debugger"]
+	path = middleware/utils/debugger
+	url = git@github.com:ZeraGmbH/vf-debugger.git
+[submodule "other/utils/vf-unittest2"]
+	path = other/utils/vf-unittest2
+	url = git@github.com:ZeraGmbH/vf-unittest2.git
+[submodule "other/utils/vf-database-recorder"]
+	path = other/utils/vf-database-recorder
+	url = git@github.com:ZeraGmbH/vf-database-recorder.git
+[submodule "other/utils/vf-database-replay"]
+	path = other/utils/vf-database-replay
+	url = git@github.com:ZeraGmbH/vf-database-replay.git
+[submodule "middleware/utils/vf-crypto-bridge"]
+	path = middleware/utils/vf-crypto-bridge
+	url = git@github.com:ZeraGmbH/vf-crypto-bridge.git
+[submodule "frontend/guis/vf-declarative-gui"]
+	path = frontend/guis/vf-declarative-gui
+	url = git@github.com:ZeraGmbH/vf-declarative-gui.git
+[submodule "frontend/guis/zera-setup2"]
+	path = frontend/guis/zera-setup2
+	url = git@github.com:ZeraGmbH/zera-setup2.git
+[submodule "frontend/libs/vf-qmllibs"]
+	path = frontend/libs/vf-qmllibs
+	url = git@github.com:ZeraGmbH/vf-qmllibs.git
+[submodule "frontend/libs/zvkeyboard"]
+	path = frontend/libs/zvkeyboard
+	url = git@github.com:ZeraGmbH/zvkeyboard.git
+[submodule "frontend/libs/SortFilterProxyModelCmake"]
+	path = frontend/libs/SortFilterProxyModelCmake
+	url = git@github.com:ZeraGmbH/SortFilterProxyModelCmake.git
+[submodule "frontend/libs/JsonSettingsQml"]
+	path = frontend/libs/JsonSettingsQml
+	url = git@github.com:ZeraGmbH/JsonSettingsQML.git
+[submodule "middleware/api/vf-cpp"]
+	path = middleware/api/vf-cpp
+	url = git@github.com:ZeraGmbH/vf-cpp.git
+[submodule "frontend/gui/vf-gui-translation"]
+	path = frontend/libs/vf-gui-translation
+	url = git@github.com:ZeraGmbH/vf-gui-translation.git
+[submodule "backend/extern/PythonScriptingInterface"]
+	path = backend/extern/PythonScriptingInterface
+	url = git@github.com:ZeraGmbH/PythonScriptingInterface.git
+[submodule "backend/processing/vf-export"]
+	path = backend/processing/vf-export
+	url = git@github.com:ZeraGmbH/vf-export.git
+[submodule "backend/processing/vf-files"]
+	path = backend/processing/vf-files
+	url = git@github.com:ZeraGmbH/vf-files.git
+[submodule "backend/processing/vf-logger"]
+	path = backend/processing/vf-logger
+	url = git@github.com:ZeraGmbH/vf-logger.git
+[submodule "backend/processing/vf-script"]
+	path = backend/processing/vf-script
+	url = git@github.com:ZeraGmbH/vf-script.git
+[submodule "middleware/transport/xiqnet"]
+	path = middleware/transport/xiqnet
+	url = git@github.com:ZeraGmbH/xiqnet.git
+[submodule "frontend/libs/vf-gui-translation"]
+	path = frontend/libs/vf-gui-translation
+	url = git@github.com:ZeraGmbH/vf-gui-translation.git
