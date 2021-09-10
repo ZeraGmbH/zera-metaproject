@@ -73,7 +73,14 @@
 [submodule "backend/extern/PythonScriptingInterface"]
 	path = backend/extern/PythonScriptingInterface
 	url = git@github.com:ZeraGmbH/PythonScriptingInterface.git
-
+[submodule "backend/processing/vf-export"]
+	path = backend/processing/vf-export
+	url = git@github.com:ZeraGmbH/vf-export.git
+	branch = master
+[submodule "backend/processing/vf-files"]
+	path = backend/processing/vf-files
+	url = git@github.com:ZeraGmbH/vf-files.git
+	branch = master
 
 
 [submodule "backend/services/com5003d"]
