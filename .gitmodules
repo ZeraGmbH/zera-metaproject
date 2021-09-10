@@ -124,3 +124,11 @@
 	path = backend/libs/qtiohelper
 	url = git@github.com:ZeraGmbH/qtiohelper.git
 	branch = master
+[submodule "backend/services/wm3000ud"]
+	path = backend/services/wm3000ud
+	url = git@github.com:ZeraGmbH/wm3000ud.git
+	branch = qt5-master
+[submodule "backend/services/wm3000id"]
+	path = backend/services/wm3000id
+	url = git@github.com:ZeraGmbH/wm3000id.git
+	branch = qt5-master
