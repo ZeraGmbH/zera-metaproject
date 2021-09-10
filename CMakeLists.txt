@@ -293,8 +293,17 @@ set(path backend/services)
 set(deps zera-scpi zera-resourcemanager-protobuf zera-classes)
 add_sub_project_deps(${name} ${path} "deps")
 
+#project wm3000id
+set(name wm3000id)
+set(path backend/services)
+set(deps zera-classes)
+add_sub_project_deps(${name} ${path} "deps")
 
-
+#project wm3000ud
+set(name wm3000ud)
+set(path backend/services)
+set(deps zera-classes)
+add_sub_project_deps(${name} ${path} "deps")
 
 
 
