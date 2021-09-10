@@ -120,3 +120,7 @@
 	url = git@github.com:ZeraGmbH/zera-scpi.git
 	branch = master
 
+[submodule "backend/libs/qtiohelper"]
+	path = backend/libs/qtiohelper
+	url = git@github.com:ZeraGmbH/qtiohelper.git
+	branch = master
