@@ -1,0 +1,28 @@
+on:
+  workflow_dispatch:
+    inputs:
+      submodule:
+        description: submodule name 
+        required: true
+        
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    continue-on-error: true
+
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+        with:
+          submodules: true
+      - name: Git Sumbodule Update
+        run: |
+          CI/updateSubmodule.sh ${{ github.event.inputs.submodule}}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: ${{ github.ref }}
