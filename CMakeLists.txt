@@ -131,6 +131,12 @@ set(path backend/extern)
 set(deps )
 add_sub_project_deps(${name} ${path} "deps")
 
+#project qtiohelper
+set(name qtiohelper)
+set(path backend/libs)
+set(deps )
+add_sub_project_deps(${name} ${path} "deps")
+
 
 #modules
 
