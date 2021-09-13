@@ -49,9 +49,6 @@
 [submodule "frontend/guis/vf-declarative-gui"]
 	path = frontend/guis/vf-declarative-gui
 	url = git@github.com:ZeraGmbH/vf-declarative-gui.git
-[submodule "frontend/guis/zera-setup2"]
-	path = frontend/guis/zera-setup2
-	url = git@github.com:ZeraGmbH/zera-setup2.git
 [submodule "frontend/libs/vf-qmllibs"]
 	path = frontend/libs/vf-qmllibs
 	url = git@github.com:ZeraGmbH/vf-qmllibs.git

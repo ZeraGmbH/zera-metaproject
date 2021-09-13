@@ -204,10 +204,10 @@ add_sub_project_deps(${name} ${path} "deps")
 #applications
 
 #project zera-setup2
-set(name zera-setup2)
-set(path frontend/guis)
-set(deps vf-tcp helpers vf-component vf-event vf-logger)
-add_sub_project_deps(${name} ${path} "deps")
+#set(name zera-setup2)
+#set(path frontend/guis)
+#set(deps vf-tcp helpers vf-component vf-event vf-logger)
+#add_sub_project_deps(${name} ${path} "deps")
 
 #project vf-declarative-gui
 set(name vf-declarative-gui)
