@@ -28,7 +28,12 @@ endif()
 
 # place libs everything can depend on here
 
-
+#project zera-resourcemanager-protobuf
+# This is a stupid backend/middleware dep
+set(name zera-resourcemanager-protobuf)
+set(path backend/libs)
+set(deps )
+add_sub_project_deps(${name} ${path} "deps")
 
 
 #middleware
@@ -53,7 +58,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project xiqnet
 set(name xiqnet)
 set(path middleware/transport)
-set(deps helpers)
+set(deps helpers zera-resourcemanager-protobuf)
 add_sub_project_deps(${name} ${path} "deps")
 
 #project vf-crypto-bridge
@@ -238,12 +243,6 @@ add_sub_project_deps(${name} ${path} "deps")
 set(name zera-scpi)
 set(path backend/libs)
 set(deps )
-add_sub_project_deps(${name} ${path} "deps")
-
-#project zera-resourcemanager-protobuf
-set(name zera-resourcemanager-protobuf)
-set(path backend/libs)
-set(deps zera-scpi)
 add_sub_project_deps(${name} ${path} "deps")
 
 #project zera-classes
