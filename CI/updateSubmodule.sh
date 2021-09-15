@@ -21,4 +21,4 @@ git add $submodulepath
 cd $submodulepath
 reflogmsg=$(git log --pretty=format:"%h %s" $currentid..)
 cd $workroot
-git -c "user.name=gitbot" -c "user.email=gitbot@noreply.de"  commit -s -m "ugrade $submodule" -m "$reflogmsg"
+git -c "user.name=gitbot" -c "user.email=gitbot@noreply.de"  commit -s -m "upgrade $submodule" -m "$reflogmsg"
