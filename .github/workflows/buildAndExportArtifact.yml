@@ -2,11 +2,11 @@ name: Build
 on:
   push:
     branches:
-      - master
+      - ci_testing
   workflow_dispatch:
   workflow_run:
     workflows: ["Update Submodule"]
-    branches: [master]
+    branches: [ci_testing]
     types: 
       - completed
 
