@@ -8,6 +8,10 @@ if [ -z "$branch" ]
 then
       branch="master"
 fi
+if [ -z "$submodulepath" ]
+then
+      exit 1
+fi
 cd $submodulepath
 git checkout $branch
 cd $workroot
