@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.6)
 
 #set project name and language
-project(vf-metaproject LANGUAGES CXX)
+project(zera-metaproject LANGUAGES CXX)
 
 #Automoc and RCC ON. Needed in QT projects
 #set(CMAKE_AUTOMOC ON)
