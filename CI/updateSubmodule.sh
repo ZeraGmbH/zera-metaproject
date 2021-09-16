@@ -16,9 +16,9 @@ cd $submodulepath
 git checkout $branch
 cd $workroot
 currentid=$(git rev-parse HEAD:$submodulepath)
-git -c "user.name=Your Name" -c "user.email=Your email" submodule update --init --remote --rebase -- $submodulepath
+git -c "user.name=gitbot" -c "user.email=gitbot" submodule update --init --remote --rebase -- $submodulepath
 git add $submodulepath
 cd $submodulepath
 reflogmsg=$(git log --pretty=format:"%h %s" $currentid..)
 cd $workroot
-git -c "user.name=gitbot" -c "user.email=gitbot@noreply.de"  commit -s -m "upgrade $submodule" -m "$reflogmsg"
+git -c "user.name=gitbot" -c "user.email=gitbot@noreply.de"  commit -s -m "update $submodule" -m "$reflogmsg"
