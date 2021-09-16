@@ -2,13 +2,13 @@ name: Build
 on:
   push:
     branches:
-      - ci_testing
+      - master
     paths:
       - '!.github/**'
   workflow_dispatch:
   workflow_run:
     workflows: ["Update Submodule"]
-    branches: [ci_testing]
+    branches: [master]
     types: 
       - completed
 
