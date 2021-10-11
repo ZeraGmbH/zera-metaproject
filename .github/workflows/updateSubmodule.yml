@@ -5,7 +5,8 @@ on:
       submodule:
         description: submodule name 
         required: true
-        
+
+concurrency: update_submodule
 
 jobs:
   update_submodule:
