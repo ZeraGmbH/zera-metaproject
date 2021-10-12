@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+git -c "user.name=gitbot" -c "user.email=gitbot" submodule update --init --remote --rebase --
 newCommits="$(git status | grep 'new commits')"
 workroot=$(pwd)
 while read -r path
@@ -20,7 +20,6 @@ do
     git checkout $branch
     cd $workroot
     currentid=$(git rev-parse HEAD:$submodulepath)
-    git -c "user.name=gitbot" -c "user.email=gitbot" submodule update --init --remote --rebase -- $submodulepath
     git add $submodulepath
     cd $submodulepath
     reflogmsg=$(git log --pretty=format:"%h %s" $currentid..)
