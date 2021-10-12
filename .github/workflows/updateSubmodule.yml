@@ -4,7 +4,7 @@ on:
     inputs:
       submodule:
         description: submodule name 
-        required: true
+        required: false
 
 concurrency: update_submodule
 
