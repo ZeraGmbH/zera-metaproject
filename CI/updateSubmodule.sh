@@ -1,7 +1,9 @@
 #!/bin/bash
 
+git submodule update --init
 git -c "user.name=gitbot" -c "user.email=gitbot" submodule update --init --remote --rebase --
 newCommits="$(git status | grep 'new commits')"
+echo "$newCommits"
 workroot=$(pwd)
 while read -r path
 do
