@@ -9,7 +9,7 @@ while read -r path
 do
     submodulepath=$(echo $path | sed -re 's/^\s*(\S*)\s*(\S*).*/\2/g')
     submodule=${submodulepath##*/} 
-    branch=$(grep branch .gitmodules | sed 's/.* //' | grep $submodule)
+    branch=$(git config --file=.gitmodules -l | grep branch | grep $submodule | sed -r 's/.*branch=(.*)/\1/')
     if [ -z "$branch" ]
     then
       branch="master"
