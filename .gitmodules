@@ -157,3 +157,7 @@
 	path = other/fontawesome-qml
 	url = git@github.com:schnitzeltony/fontawesome-qml.git
 	branch = master
+[submodule "other/SortFilterProxyModel"]
+	path = other/SortFilterProxyModel
+	url = git@github.com:schnitzeltony/SortFilterProxyModel.git
+	branch = master
