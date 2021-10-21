@@ -153,3 +153,7 @@
 	path = backend/services/wm3000id
 	url = git@github.com:ZeraGmbH/wm3000id.git
 	branch = qt5-master
+[submodule "other/fontawesome-qml"]
+	path = other/fontawesome-qml
+	url = git@github.com:schnitzeltony/fontawesome-qml.git
+	branch = master
