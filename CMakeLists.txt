@@ -28,6 +28,11 @@ endif()
 
 # place libs everything can depend on here
 
+set(name zera-json-helpers)
+set(path other)
+set(deps )
+add_sub_project_deps(${name} ${path} "deps")
+
 set(name SortFilterProxyModel)
 set(path other)
 set(deps )
