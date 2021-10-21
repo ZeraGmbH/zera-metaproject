@@ -28,6 +28,16 @@ endif()
 
 # place libs everything can depend on here
 
+set(name SortFilterProxyModel)
+set(path other)
+set(deps )
+add_sub_project_deps(${name} ${path} "deps")
+
+set(name fontawesome-qml)
+set(path other)
+set(deps SortFilterProxyModel)
+add_sub_project_deps(${name} ${path} "deps")
+
 #project zera-resourcemanager-protobuf
 # This is a stupid backend/middleware dep
 set(name zera-resourcemanager-protobuf)
