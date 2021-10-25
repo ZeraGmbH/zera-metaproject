@@ -232,7 +232,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project vf-declarative-gui
 set(name vf-declarative-gui)
 set(path frontend/guis)
-set(deps vf-tcp vf-gui-translation helpers vf-component vf-event vf-logger vf-qmllibs)
+set(deps vf-tcp vf-gui-translation helpers vf-component vf-event vf-logger vf-qmllibs zera-json-helpers)
 add_sub_project_deps(${name} ${path} "deps")
 
 #project vf-database-recorder
@@ -263,7 +263,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project zera-classes
 set(name zera-classes)
 set(path backend/libs)
-set(deps zera-scpi zera-resourcemanager-protobuf xiqnet vf-component helpers vf-event)
+set(deps zera-scpi zera-resourcemanager-protobuf xiqnet vf-component helpers vf-event zera-json-helpers)
 add_sub_project_deps(${name} ${path} "deps")
 
 
