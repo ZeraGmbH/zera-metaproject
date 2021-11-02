@@ -29,13 +29,18 @@ jobs:
           echo ${{ github.event.head_commit.message }}
           echo ${{ github.event.workflow_run.conclusion }}
           echo ${{ github.event_name }}
-        
+      - name: Download artifact
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          repo: ZeraGmbH/zera-metaproject
+          name: buildroot
+          workflow: buildAndExportArtifact.yml
+          path: /github/home/install/
       - uses: actions/checkout@master
         with:
           submodules: recursive
       - name: Build
         run: |
-          
           cd $HOME
           mkdir -p "$HOME/targetbuild"
           cd "$HOME/targetbuild"
@@ -45,7 +50,7 @@ jobs:
            -DCMAKE_INSTALL_SYSCONFDIR="$HOME/install/etc" \
            -DfirstBuild=ON
           # compile / install
-           make -j $(getconf _NPROCESSORS_ONLN)
+           make -i -j $(getconf _NPROCESSORS_ONLN)
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.4
         with:
