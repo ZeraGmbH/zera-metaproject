@@ -263,7 +263,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project zera-classes
 set(name zera-classes)
 set(path backend/libs)
-set(deps zera-scpi zera-resourcemanager-protobuf xiqnet vf-component helpers vf-event zera-json-helpers)
+set(deps vf-cpp zera-scpi zera-resourcemanager-protobuf xiqnet vf-component helpers vf-event zera-json-helpers)
 add_sub_project_deps(${name} ${path} "deps")
 
 
@@ -276,7 +276,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project zera-modulemanager
 set(name zera-modulemanager)
 set(path backend/applications)
-set(deps zera-scpi zera-resourcemanager-protobuf zera-classes vf-component helpers vf-event)
+set(deps zera-scpi zera-resourcemanager-protobuf vf-files zera-classes vf-component helpers vf-event)
 add_sub_project_deps(${name} ${path} "deps")
 
 
