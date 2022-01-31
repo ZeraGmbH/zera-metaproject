@@ -129,7 +129,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project debugger
 set(name debugger)
 set(path middleware/utils)
-set(deps vf-tcp helpers vf-component vf-event)
+set(deps vf-tcp vf-qml helpers vf-component vf-event)
 add_sub_project_deps(${name} ${path} "deps")
 
 
