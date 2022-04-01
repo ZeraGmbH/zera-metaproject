@@ -165,3 +165,6 @@
 	path = other/zera-json-helpers
 	url = git@github.com:ZeraGmbH/zera-json-helpers.git
 	branch = master
+[submodule "other/simple-parser"]
+	path = other/simple-parser
+	url = git@github.com:ZeraGmbH/simple-parser.git
