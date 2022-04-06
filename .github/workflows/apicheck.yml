@@ -1,0 +1,32 @@
+name: apiCheckBuild
+on:
+  schedule:
+    - cron:  '0 0 * * 0'
+  workflow_dispatch:
+jobs:
+  build:    
+    runs-on: ubuntu-latest
+
+    container:
+      image: schnitzeltony/fedora-qt5:32
+    steps:
+      - name: debug
+        run: |
+          echo ${{ github.event.head_commit.message }}
+          echo ${{ github.event.workflow_run.conclusion }}
+          echo ${{ github.event_name }}
+      - uses: actions/checkout@master
+        with:
+          submodules: recursive
+      - name: Build
+        run: |
+          cd $HOME
+          mkdir -p "$HOME/targetbuild"
+          cd "$HOME/targetbuild"
+          cmake $GITHUB_WORKSPACE \
+           -DCMAKE_PREFIX_PATH="$HOME/install/usr;/usr" \
+           -DCMAKE_INSTALL_PREFIX:PATH="$HOME/install/usr" \
+           -DCMAKE_INSTALL_SYSCONFDIR="$HOME/install/etc" \
+           -DfirstBuild=ON
+          # compile / install
+           make -j $(getconf _NPROCESSORS_ONLN)
