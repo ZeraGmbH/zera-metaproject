@@ -34,9 +34,11 @@ jobs:
 
       - name: Download build artifact
         continue-on-error: true
-        uses: actions/download-artifact@v3
+        uses: dawidd6/action-download-artifact@v2
         with:
+          repo: ZeraGmbH/zera-metaproject
           name: tempbuild
+          workflow: buildAndExportArtifact.yml
           path: /github/home/targetbuild/
 
       - name: Download install artifact
