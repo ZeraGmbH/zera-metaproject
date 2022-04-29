@@ -26,7 +26,7 @@ jobs:
     container:
       image: schnitzeltony/fedora-qt5:32
     steps:
-      - name: debug
+      - name: Echo github event data
         run: |
           echo ${{ github.event.head_commit.message }}
           echo ${{ github.event.workflow_run.conclusion }}
@@ -50,6 +50,7 @@ jobs:
       - uses: actions/checkout@master
         with:
           submodules: recursive
+
       - name: Build
         run: |
           cd $HOME
