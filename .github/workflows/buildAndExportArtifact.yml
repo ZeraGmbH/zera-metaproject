@@ -65,7 +65,7 @@ jobs:
            make -i -j $(getconf _NPROCESSORS_ONLN)
 
       - name: Upload build artifact
-        uses: actions/download-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: tempbuild
           path: /github/home/targetbuild/
