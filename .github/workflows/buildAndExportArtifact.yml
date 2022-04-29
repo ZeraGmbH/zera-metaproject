@@ -32,6 +32,13 @@ jobs:
           echo ${{ github.event.workflow_run.conclusion }}
           echo ${{ github.event_name }}
 
+      - name: Download build artifact
+        continue-on-error: true
+        uses: actions/download-artifact@v3
+        with:
+          name: tempbuild
+          path: /github/home/targetbuild/
+
       - name: Download install artifact
         continue-on-error: true
         uses: dawidd6/action-download-artifact@v2
@@ -43,13 +50,6 @@ jobs:
       - uses: actions/checkout@master
         with:
           submodules: recursive
-
-      - name: Download build artifact
-        continue-on-error: true
-        uses: actions/download-artifact@v3
-        with:
-          name: tempbuild
-          path: /github/home/targetbuild/
 
       - name: Build
         run: |
