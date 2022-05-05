@@ -29,3 +29,11 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           branch: ${{ github.ref }}
+      - uses: convictional/trigger-workflow-and-wait@v1.4.0
+        with:
+          owner: ZeraGmbH
+          repo: meta-zera
+          github_token: ${{ secrets.G_TRIGGER_WORKFLOW }}
+          workflow_file_name: updateRecipes.yml
+          inputs: '{"commitid" : "${{ env.COMMIT_ID }}"}'  
+          ref: master
