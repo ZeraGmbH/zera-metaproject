@@ -20,6 +20,8 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
+      - name: store commit id before update
+        run:  echo "COMMIT_ID=$(git rev-parse HEAD)" >> $GITHUB_ENV
       - name: Git Sumbodule Update
         run: |
           CI/updateSubmodule.sh ${{ github.event.inputs.submodule}}
