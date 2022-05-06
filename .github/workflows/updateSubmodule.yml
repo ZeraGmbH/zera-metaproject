@@ -37,3 +37,4 @@ jobs:
           workflow_file_name: updateRecipes.yml
           inputs: '{"commitid" : "${{ env.COMMIT_ID }}"}'  
           ref: master
+          wait_interval: 30
