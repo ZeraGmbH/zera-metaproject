@@ -10,15 +10,11 @@ project(zera-metaproject LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
-
-
 include(ZeraSuperBuild.cmake)
-
 
 #activate QML Debugging if build type is Debug
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
-    message(STATUS "QML Debugging is enabled. Please use this build only in a dafe environment")
+    message(STATUS "QML Debugging is enabled. Please use this build only in a safe environment")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG")
 endif()
 
