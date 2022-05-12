@@ -168,3 +168,6 @@
 [submodule "other/simple-parser"]
 	path = other/simple-parser
 	url = git@github.com:ZeraGmbH/simple-parser.git
+[submodule "backend/libs/bridgefmtspihelper"]
+	path = backend/libs/bridgefmtspihelper
+	url = https://github.com/ZeraGmbH/bridgefmtspihelper.git
