@@ -250,13 +250,17 @@ set(deps vf-tcp helpers vf-component vf-event vf-logger)
 add_sub_project_deps(${name} ${path} "deps")
 
 
-
-
 ##zera-libs-and-services
 
 ##Libs
 #project zera-scpi
 set(name zera-scpi)
+set(path backend/libs)
+set(deps )
+add_sub_project_deps(${name} ${path} "deps")
+
+#project bridgefmtspihelper
+set(name bridgefmtspihelper)
 set(path backend/libs)
 set(deps )
 add_sub_project_deps(${name} ${path} "deps")
@@ -279,7 +283,6 @@ set(name zera-modulemanager)
 set(path backend/applications)
 set(deps zera-scpi zera-resourcemanager-protobuf vf-files zera-classes vf-component helpers vf-event)
 add_sub_project_deps(${name} ${path} "deps")
-
 
 
 ##Services
@@ -319,61 +322,5 @@ set(name wm3000ud)
 set(path backend/services)
 set(deps zera-classes)
 add_sub_project_deps(${name} ${path} "deps")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
