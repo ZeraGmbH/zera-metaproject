@@ -163,3 +163,7 @@
 [submodule "backend/libs/bridgefmtspihelper"]
 	path = backend/libs/bridgefmtspihelper
 	url = https://github.com/ZeraGmbH/bridgefmtspihelper.git
+[submodule "other/applications/zfpgatester"]
+	path = other/applications/zfpgatester
+	url = git@github.com:ZeraGmbH/zfpgatester.git
+	branch = master
