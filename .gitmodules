@@ -104,22 +104,6 @@
 	branch = master
 
 
-[submodule "backend/services/com5003d"]
-	path = backend/services/com5003d
-	url = git@github.com:ZeraGmbH/com5003d.git
-	branch = master
-[submodule "backend/services/zdsp1d"]
-	path = backend/services/zdsp1d
-	url = git@github.com:ZeraGmbH/zdsp1d.git
-	branch = v2
-[submodule "backend/services/mt310s2d"]
-	path = backend/services/mt310s2d
-	url = git@github.com:ZeraGmbH/mt310s2d.git
-	branch = master
-[submodule "backend/services/sec1000d"]
-	path = backend/services/sec1000d
-	url = git@github.com:ZeraGmbH/sec1000d.git
-	branch = master
 [submodule "backend/applications/zera-resourcemanager"]
 	path = backend/applications/zera-resourcemanager
 	url = git@github.com:ZeraGmbH/zera-resourcemanager.git
@@ -167,3 +151,6 @@
 	path = other/applications/zfpgatester
 	url = git@github.com:ZeraGmbH/zfpgatester.git
 	branch = master
+[submodule "backend/services/zenux-services"]
+	path = backend/services/zenux-services
+	url = git@github.com:ZeraGmbH/zenux-services.git

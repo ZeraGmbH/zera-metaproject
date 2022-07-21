@@ -292,28 +292,8 @@ add_sub_project_deps(${name} ${path} "deps")
 
 ##Services
 
-#project com5003d
-set(name com5003d)
+set(name zenux-services)
 set(path backend/services)
 set(deps zera-scpi zera-resourcemanager-protobuf zera-classes)
 add_sub_project_deps(${name} ${path} "deps")
-
-#project sec1000d
-set(name sec1000d)
-set(path backend/services)
-set(deps zera-scpi zera-resourcemanager-protobuf zera-classes)
-add_sub_project_deps(${name} ${path} "deps")
-
-#project zdsp1d
-set(name zdsp1d)
-set(path backend/services)
-set(deps zera-scpi zera-resourcemanager-protobuf zera-classes)
-add_sub_project_deps(${name} ${path} "deps")
-
-#project mt310s2d
-set(name mt310s2d)
-set(path backend/services)
-set(deps zera-scpi zera-resourcemanager-protobuf zera-classes)
-add_sub_project_deps(${name} ${path} "deps")
-
 
