@@ -12,6 +12,12 @@ git submodule update --init --recursive
 git submodule update --remote
 ```
 
+to update
+```
+git submodule update --init --recursive
+git submodule update --remote
+git pull --recurse-submodules
+```
 
 ## Setup Project
 Following folders must be set:
