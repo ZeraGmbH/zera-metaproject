@@ -1,11 +1,3 @@
-[submodule "middleware/processing/vf-event"]
-	path = middleware/processing/vf-event
-	url = git@github.com:ZeraGmbH/vf-event.git
-	branch = master
-[submodule "middleware/processing/vf-component"]
-	path = middleware/processing/vf-component
-	url = git@github.com:ZeraGmbH/vf-component.git
-	branch = master
 [submodule "backend/vf-logger"]
 	path = backend/processing/vf-logger
 	url = git@github.com:ZeraGmbH/vf-logger.git
@@ -30,17 +22,9 @@
 	path = middleware/transport/vf-tcp
 	url = git@github.com:ZeraGmbH/vf-tcp.git
 	branch = master
-[submodule "middleware/storage/vf-storage-hash"]
-	path = middleware/storage/vf-storage-hash
-	url = git@github.com:ZeraGmbH/vf-storage-hash.git
-	branch = master
 [submodule "middleware/api/vf-qml"]
 	path = middleware/api/vf-qml
 	url = git@github.com:ZeraGmbH/vf-qml.git
-	branch = master
-[submodule "middleware/utils/helpers"]
-	path = middleware/utils/helpers
-	url = git@github.com:ZeraGmbH/vf-helpers.git
 	branch = master
 [submodule "middleware/utils/debugger"]
 	path = middleware/utils/debugger
@@ -154,3 +138,7 @@
 [submodule "backend/services/zenux-services"]
 	path = backend/services/zenux-services
 	url = git@github.com:ZeraGmbH/zenux-services.git
+[submodule "middleware/vein-framework"]
+	path = middleware/vein-framework
+	url = git@github.com:ZeraGmbH/vein-framework.git
+	branch = main
