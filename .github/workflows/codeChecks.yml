@@ -17,7 +17,7 @@ jobs:
           - clang++
           - clazy
         container:
-          - schnitzeltony/fedora-qt5:32
+          - schnitzeltony/fedora-qt5:35
     runs-on: ubuntu-latest
     container:
       image: ${{ matrix.container }}
