@@ -142,3 +142,6 @@
 	path = middleware/vein-framework
 	url = git@github.com:ZeraGmbH/vein-framework.git
 	branch = main
+[submodule "other/utils/zera-resource-viewer"]
+	path = other/utils/zera-resource-viewer
+	url = git@github.com:ZeraGmbH/zera-resource-viewer.git
