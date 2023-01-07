@@ -6,10 +6,6 @@
 	path = backend/processing/vf-script
 	url = git@github.com:ZeraGmbH/vf-script.git
 	branch = master
-[submodule "middleware/transport/vf-protobuf"]
-	path = middleware/transport/vf-protobuf
-	url = git@github.com:ZeraGmbH/vf-protobuf.git
-	branch = design2
 [submodule "middelware/transport/xiqnet"]
 	path = middleware/transport/xiqnet
 	url = git@github.com:ZeraGmbH/xiqnet.git
