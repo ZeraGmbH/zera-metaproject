@@ -260,6 +260,13 @@ set(path backend/applications)
 list(APPEND deps zera-scpi zera-resourcemanager-protobuf zera-classes)
 add_sub_project_deps(${name} ${path} "deps")
 
+
+#project zera-resource-viewer
+set(name zera-resource-viewer)
+set(path other/utils)
+set(deps zera-scpi)
+add_sub_project_deps(${name} ${path} "deps")
+
 #project zera-modulemanager
 set(name zera-modulemanager)
 set(path backend/applications)
