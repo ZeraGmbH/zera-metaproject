@@ -24,6 +24,11 @@ endif()
 
 # place libs everything can depend on here
 
+set(name zenux-core)
+set(path backend/libs)
+set(deps )
+add_sub_project_deps(${name} ${path} "deps")
+
 set(name zera-json-helpers)
 set(path other)
 set(deps )
@@ -250,7 +255,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project zera-classes
 set(name zera-classes)
 set(path backend/libs)
-set(deps vf-cpp zera-scpi zera-resourcemanager-protobuf xiqnet vein-framework zera-json-helpers)
+set(deps zenux-core vf-cpp zera-scpi zera-resourcemanager-protobuf xiqnet vein-framework zera-json-helpers)
 add_sub_project_deps(${name} ${path} "deps")
 
 
