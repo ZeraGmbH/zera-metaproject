@@ -58,10 +58,6 @@
 	path = frontend/libs/SortFilterProxyModelCmake
 	url = git@github.com:ZeraGmbH/SortFilterProxyModelCmake.git
 	branch = master
-[submodule "frontend/libs/JsonSettingsQml"]
-	path = frontend/libs/JsonSettingsQml
-	url = git@github.com:ZeraGmbH/JsonSettingsQML.git
-	branch = master
 [submodule "middleware/api/vf-cpp"]
 	path = middleware/api/vf-cpp
 	url = git@github.com:ZeraGmbH/vf-cpp.git

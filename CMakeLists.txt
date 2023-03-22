@@ -185,12 +185,6 @@ set(path frontend/libs)
 set(deps)
 add_sub_project_deps(${name} ${path} "deps")
 
-#project JsonSettingsQml
-set(name JsonSettingsQml)
-set(path frontend/libs)
-set(deps)
-add_sub_project_deps(${name} ${path} "deps")
-
 #project vf-gui-translation
 set(name vf-gui-translation)
 set(path frontend/libs)
@@ -206,7 +200,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project vf-qmllibs
 set(name vf-qmllibs)
 set(path frontend/libs)
-set(deps SortFilterProxyModelCmake JsonSettingsQml vf-gui-translation)
+set(deps SortFilterProxyModelCmake vf-gui-translation)
 add_sub_project_deps(${name} ${path} "deps")
 
 #applications
