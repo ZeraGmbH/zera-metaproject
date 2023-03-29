@@ -50,10 +50,6 @@
 	path = frontend/libs/vf-qmllibs
 	url = git@github.com:ZeraGmbH/vf-qmllibs.git
 	branch = master
-[submodule "frontend/libs/zvkeyboard"]
-	path = frontend/libs/zvkeyboard
-	url = git@github.com:ZeraGmbH/zvkeyboard.git
-	branch = master
 [submodule "frontend/libs/SortFilterProxyModelCmake"]
 	path = frontend/libs/SortFilterProxyModelCmake
 	url = git@github.com:ZeraGmbH/SortFilterProxyModelCmake.git

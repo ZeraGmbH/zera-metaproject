@@ -179,12 +179,6 @@ add_sub_project_deps(${name} ${path} "deps")
 
 #libs
 
-#Project zvkeyboard
-set(name zvkeyboard)
-set(path frontend/libs)
-set(deps)
-add_sub_project_deps(${name} ${path} "deps")
-
 #project vf-gui-translation
 set(name vf-gui-translation)
 set(path frontend/libs)
