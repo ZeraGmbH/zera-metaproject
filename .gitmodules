@@ -58,7 +58,7 @@
 	path = middleware/api/vf-cpp
 	url = git@github.com:ZeraGmbH/vf-cpp.git
 	branch = master
-[submodule "frontend/gui/vf-gui-translation"]
+[submodule "frontend/libs/vf-gui-translation"]
 	path = frontend/libs/vf-gui-translation
 	url = git@github.com:ZeraGmbH/vf-gui-translation.git
 	branch = master
