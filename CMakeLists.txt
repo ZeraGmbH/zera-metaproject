@@ -182,16 +182,10 @@ set(path frontend/libs)
 set(deps)
 add_sub_project_deps(${name} ${path} "deps")
 
-#project SortFilterProxyModelCmake
-set(name SortFilterProxyModelCmake)
-set(path frontend/libs)
-set(deps)
-add_sub_project_deps(${name} ${path} "deps")
-
 #project vf-qmllibs
 set(name vf-qmllibs)
 set(path frontend/libs)
-set(deps SortFilterProxyModelCmake vf-gui-translation)
+set(deps SortFilterProxyModel vf-gui-translation)
 add_sub_project_deps(${name} ${path} "deps")
 
 #applications
