@@ -132,3 +132,6 @@
 [submodule "backend/libs/zenux-core"]
 	path = backend/libs/zenux-core
 	url = git@github.com:ZeraGmbH/zenux-core.git
+[submodule "backend/libs/zera-microcontroller"]
+	path = backend/libs/zera-microcontroller
+	url = git@github.com:ZeraGmbH/zera-microcontroller.git

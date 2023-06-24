@@ -26,9 +26,14 @@ set(path backend/libs)
 set(deps )
 add_sub_project_deps(${name} ${path} "deps")
 
+set(name zera-microcontroller)
+set(path backend/libs)
+set(deps zenux-core)
+add_sub_project_deps(${name} ${path} "deps")
+
 set(name zera-json-helpers)
 set(path other)
-set(deps )
+set(deps)
 add_sub_project_deps(${name} ${path} "deps")
 
 set(name simple-parser)
@@ -234,7 +239,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project zera-classes
 set(name zera-classes)
 set(path backend/libs)
-set(deps zenux-core vf-cpp zera-scpi zera-resourcemanager-protobuf xiqnet vein-framework zera-json-helpers)
+set(deps zenux-core zera-microcontroller vf-cpp zera-scpi zera-resourcemanager-protobuf xiqnet vein-framework zera-json-helpers)
 add_sub_project_deps(${name} ${path} "deps")
 
 
