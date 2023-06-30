@@ -23,7 +23,7 @@
 	url = git@github.com:ZeraGmbH/vf-database-replay.git
 	branch = master
 [submodule "middleware/utils/vf-crypto-bridge"]
-	path = middleware/utils/vf-crypto-bridge
+	path = vf-crypto-bridge
 	url = git@github.com:ZeraGmbH/vf-crypto-bridge.git
 	branch = master
 [submodule "frontend/guis/vf-declarative-gui"]
