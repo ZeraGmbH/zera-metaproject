@@ -121,11 +121,9 @@ set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
 
-#project vf-logger
 set(name vf-logger)
-set(path backend/processing)
 set(deps vein-framework)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 
 set(name vf-export)

@@ -1,5 +1,5 @@
 [submodule "backend/vf-logger"]
-	path = backend/processing/vf-logger
+	path = vf-logger
 	url = git@github.com:ZeraGmbH/vf-logger.git
 	branch = master
 [submodule "backend/vf-script"]
