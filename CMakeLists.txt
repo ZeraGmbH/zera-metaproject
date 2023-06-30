@@ -68,12 +68,6 @@ set(path middleware)
 set(deps )
 add_sub_project_deps(${name} ${path} "deps")
 
-#project xiqnet
-set(name xiqnet)
-set(path middleware/transport)
-set(deps )
-add_sub_project_deps(${name} ${path} "deps")
-
 #project vf-crypto-bridge
 set(name vf-crypto-bridge)
 set(path middleware/utils)
@@ -213,7 +207,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project zera-classes
 set(name zera-classes)
 set(path backend/libs)
-set(deps zenux-core zera-microcontroller vf-cpp zera-scpi xiqnet vein-framework zera-json-helpers)
+set(deps zenux-core zera-microcontroller vf-cpp zera-scpi vein-framework zera-json-helpers)
 add_sub_project_deps(${name} ${path} "deps")
 
 
