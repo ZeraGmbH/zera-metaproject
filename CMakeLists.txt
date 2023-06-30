@@ -62,11 +62,9 @@ add_sub_project_deps(${name} ${path} "deps")
 
 #libs
 
-#project vein-framework
 set(name vein-framework)
-set(path middleware)
 set(deps )
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 #project vf-crypto-bridge
 set(name vf-crypto-bridge)

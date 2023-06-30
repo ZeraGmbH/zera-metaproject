@@ -99,7 +99,7 @@
 	path = backend/services/zenux-services
 	url = git@github.com:ZeraGmbH/zenux-services.git
 [submodule "middleware/vein-framework"]
-	path = middleware/vein-framework
+	path = vein-framework
 	url = git@github.com:ZeraGmbH/vein-framework.git
 	branch = main
 [submodule "other/utils/zera-resource-viewer"]
