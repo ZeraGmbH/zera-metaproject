@@ -92,7 +92,7 @@
 	path = backend/libs/bridgefmtspihelper
 	url = git@github.com:ZeraGmbH/bridgefmtspihelper.git
 [submodule "other/applications/zfpgatester"]
-	path = other/applications/zfpgatester
+	path = zfpgatester
 	url = git@github.com:ZeraGmbH/zfpgatester.git
 	branch = master
 [submodule "backend/services/zenux-services"]

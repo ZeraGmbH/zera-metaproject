@@ -52,9 +52,8 @@ set(deps SortFilterProxyModel)
 add_sub_project_deps(${name} ${path} "deps")
 
 set(name zfpgatester)
-set(path other/applications)
 set(deps simple-parser)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 
 #middleware
