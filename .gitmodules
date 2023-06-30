@@ -7,7 +7,7 @@
 	url = git@github.com:ZeraGmbH/vf-script.git
 	branch = master
 [submodule "middleware/utils/debugger"]
-	path = middleware/utils/debugger
+	path = vf-debugger
 	url = git@github.com:ZeraGmbH/vf-debugger.git
 	branch = master
 [submodule "other/utils/vf-unittest2"]

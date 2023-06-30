@@ -71,13 +71,9 @@ set(name vf-cpp)
 set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
-#applications
-
-#project debugger
-set(name debugger)
-set(path middleware/utils)
+set(name vf-debugger)
 set(deps vein-framework vf-cpp)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 
 #project vf-unittest2
