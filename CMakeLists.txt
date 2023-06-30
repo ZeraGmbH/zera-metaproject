@@ -74,11 +74,9 @@ add_sub_project_deps(${name} ${path} "deps")
 
 
 
-#project vf-cpp
 set(name vf-cpp)
-set(path middleware/api)
 set(deps vein-framework)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 #applications
 

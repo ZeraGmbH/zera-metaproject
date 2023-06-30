@@ -35,7 +35,7 @@
 	url = git@github.com:ZeraGmbH/vf-qmllibs.git
 	branch = master
 [submodule "middleware/api/vf-cpp"]
-	path = middleware/api/vf-cpp
+	path = vf-cpp
 	url = git@github.com:ZeraGmbH/vf-cpp.git
 	branch = master
 [submodule "frontend/libs/vf-gui-translation"]
