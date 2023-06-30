@@ -116,11 +116,9 @@ add_sub_project_deps(${name} ${path} "deps")
 
 #modules
 
-#project vf-script
 set(name vf-script)
-set(path backend/processing)
 set(deps vein-framework)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 
 #project vf-logger

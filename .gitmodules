@@ -3,7 +3,7 @@
 	url = git@github.com:ZeraGmbH/vf-logger.git
 	branch = master
 [submodule "backend/vf-script"]
-	path = backend/processing/vf-script
+	path = vf-script
 	url = git@github.com:ZeraGmbH/vf-script.git
 	branch = master
 [submodule "middleware/utils/debugger"]
