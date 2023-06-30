@@ -68,13 +68,6 @@ set(path middleware)
 set(deps )
 add_sub_project_deps(${name} ${path} "deps")
 
-#project vf-tcp
-set(name vf-tcp)
-set(path middleware/transport)
-set(deps vein-framework)
-add_sub_project_deps(${name} ${path} "deps")
-
-
 #project xiqnet
 set(name xiqnet)
 set(path middleware/transport)
@@ -84,7 +77,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project vf-crypto-bridge
 set(name vf-crypto-bridge)
 set(path middleware/utils)
-set(deps vein-framework vf-tcp)
+set(deps vein-framework)
 add_sub_project_deps(${name} ${path} "deps")
 
 
@@ -100,14 +93,14 @@ add_sub_project_deps(${name} ${path} "deps")
 #project debugger
 set(name debugger)
 set(path middleware/utils)
-set(deps vein-framework vf-tcp vf-cpp)
+set(deps vein-framework vf-cpp)
 add_sub_project_deps(${name} ${path} "deps")
 
 
 #project vf-unittest2
 #set(name vf-unittest2)
 #set(path utils)
-#set(deps vein-framework vf-tcp vf-logger)
+#set(deps vein-framework vf-logger)
 #add_sub_project_deps(${name} ${path} "deps")
 
 
@@ -141,7 +134,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project vf-logger
 set(name vf-logger)
 set(path backend/processing)
-set(deps vf-tcp vein-framework)
+set(deps vein-framework)
 add_sub_project_deps(${name} ${path} "deps")
 
 
@@ -179,26 +172,26 @@ add_sub_project_deps(${name} ${path} "deps")
 #project zera-setup2
 #set(name zera-setup2)
 #set(path frontend/guis)
-#set(deps vf-tcp vein-framework vf-logger)
+#set(deps vein-framework vf-logger)
 #add_sub_project_deps(${name} ${path} "deps")
 
 #project vf-declarative-gui
 set(name vf-declarative-gui)
 set(path frontend/guis)
-set(deps vf-tcp vf-gui-translation vein-framework vf-logger vf-qmllibs zera-json-helpers)
+set(deps vf-gui-translation vein-framework vf-logger vf-qmllibs zera-json-helpers)
 add_sub_project_deps(${name} ${path} "deps")
 
 #project vf-database-recorder
 set(name vf-database-recorder)
 set(path other/utils)
-set(deps vf-tcp vein-framework vf-logger)
+set(deps vein-framework vf-logger)
 add_sub_project_deps(${name} ${path} "deps")
 
 
 #project vf-database-replay
 set(name vf-database-replay)
 set(path other/utils)
-set(deps vf-tcp vein-framework vf-logger)
+set(deps vein-framework vf-logger)
 add_sub_project_deps(${name} ${path} "deps")
 
 

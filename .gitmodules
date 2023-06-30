@@ -10,10 +10,6 @@
 	path = middleware/transport/xiqnet
 	url = git@github.com:ZeraGmbH/xiqnet.git
 	branch = master
-[submodule "middleware/transport/vf-tcp"]
-	path = middleware/transport/vf-tcp
-	url = git@github.com:ZeraGmbH/vf-tcp.git
-	branch = master
 [submodule "middleware/utils/debugger"]
 	path = middleware/utils/debugger
 	url = git@github.com:ZeraGmbH/vf-debugger.git
