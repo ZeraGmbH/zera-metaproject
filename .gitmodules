@@ -47,7 +47,7 @@
 	url = git@github.com:ZeraGmbH/PythonScriptingInterface.git
 	branch = master
 [submodule "backend/processing/vf-export"]
-	path = backend/processing/vf-export
+	path = vf-export
 	url = git@github.com:ZeraGmbH/vf-export.git
 	branch = master
 [submodule "backend/processing/vf-files"]
