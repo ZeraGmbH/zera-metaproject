@@ -51,7 +51,7 @@
 	url = git@github.com:ZeraGmbH/vf-export.git
 	branch = master
 [submodule "backend/processing/vf-files"]
-	path = backend/processing/vf-files
+	path = vf-files
 	url = git@github.com:ZeraGmbH/vf-files.git
 	branch = master
 

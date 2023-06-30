@@ -132,11 +132,9 @@ set(name vf-export)
 set(deps vf-cpp PythonScriptingInterface vein-framework vf-logger)
 add_sub_project_deps(${name} . "deps")
 
-#project vf-files
 set(name vf-files)
-set(path backend/processing)
 set(deps vf-cpp)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 #Frontend
 #########
