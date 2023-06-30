@@ -14,10 +14,6 @@
 	path = middleware/transport/vf-tcp
 	url = git@github.com:ZeraGmbH/vf-tcp.git
 	branch = master
-[submodule "middleware/api/vf-qml"]
-	path = middleware/api/vf-qml
-	url = git@github.com:ZeraGmbH/vf-qml.git
-	branch = master
 [submodule "middleware/utils/debugger"]
 	path = middleware/utils/debugger
 	url = git@github.com:ZeraGmbH/vf-debugger.git

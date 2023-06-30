@@ -89,12 +89,6 @@ add_sub_project_deps(${name} ${path} "deps")
 
 
 
-#project vf-qml
-set(name vf-qml)
-set(path middleware/api)
-set(deps vein-framework)
-add_sub_project_deps(${name} ${path} "deps")
-
 #project vf-cpp
 set(name vf-cpp)
 set(path middleware/api)
@@ -106,7 +100,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project debugger
 set(name debugger)
 set(path middleware/utils)
-set(deps vein-framework vf-tcp vf-qml vf-cpp)
+set(deps vein-framework vf-tcp vf-cpp)
 add_sub_project_deps(${name} ${path} "deps")
 
 
@@ -140,14 +134,14 @@ add_sub_project_deps(${name} ${path} "deps")
 #project vf-script
 set(name vf-script)
 set(path backend/processing)
-set(deps vein-framework vf-qml)
+set(deps vein-framework)
 add_sub_project_deps(${name} ${path} "deps")
 
 
 #project vf-logger
 set(name vf-logger)
 set(path backend/processing)
-set(deps vf-tcp vein-framework vf-qml)
+set(deps vf-tcp vein-framework)
 add_sub_project_deps(${name} ${path} "deps")
 
 
