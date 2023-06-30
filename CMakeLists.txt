@@ -201,11 +201,9 @@ set(deps zenux-core zera-microcontroller vf-cpp zera-scpi vein-framework zera-js
 add_sub_project_deps(${name} ${path} "deps")
 
 
-##Applications
 set(name zera-resourcemanager)
-set(path backend/applications)
 list(APPEND deps zera-scpi zera-classes)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 
 #project zera-resource-viewer

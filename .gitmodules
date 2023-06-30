@@ -57,7 +57,7 @@
 
 
 [submodule "backend/applications/zera-resourcemanager"]
-	path = backend/applications/zera-resourcemanager
+	path = zera-resourcemanager
 	url = git@github.com:ZeraGmbH/zera-resourcemanager.git
 	branch = master
 [submodule "backend/libs/zera-classes"]
