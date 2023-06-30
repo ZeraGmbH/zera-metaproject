@@ -82,7 +82,7 @@
 	url = git@github.com:schnitzeltony/SortFilterProxyModel.git
 	branch = master
 [submodule "other/zera-json-helpers"]
-	path = other/zera-json-helpers
+	path = zera-json-helpers
 	url = git@github.com:ZeraGmbH/zera-json-helpers.git
 	branch = master
 [submodule "other/simple-parser"]

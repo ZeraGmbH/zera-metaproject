@@ -32,9 +32,8 @@ set(deps zenux-core)
 add_sub_project_deps(${name} ${path} "deps")
 
 set(name zera-json-helpers)
-set(path other)
 set(deps)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 set(name simple-parser)
 set(deps )
