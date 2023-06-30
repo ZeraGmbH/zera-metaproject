@@ -86,7 +86,7 @@
 	url = git@github.com:ZeraGmbH/zera-json-helpers.git
 	branch = master
 [submodule "other/simple-parser"]
-	path = other/simple-parser
+	path = simple-parser
 	url = git@github.com:ZeraGmbH/simple-parser.git
 [submodule "backend/libs/bridgefmtspihelper"]
 	path = backend/libs/bridgefmtspihelper

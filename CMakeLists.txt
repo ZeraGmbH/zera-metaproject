@@ -37,9 +37,8 @@ set(deps)
 add_sub_project_deps(${name} ${path} "deps")
 
 set(name simple-parser)
-set(path other)
 set(deps )
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 set(name SortFilterProxyModel)
 set(path other)
