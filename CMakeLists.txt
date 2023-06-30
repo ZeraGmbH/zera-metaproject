@@ -89,16 +89,10 @@ add_sub_project_deps(${name} ${path} "deps")
 
 
 
-#project vf-net2
-set(name vf-net2)
-set(path middleware/transport)
-set(deps vein-framework vf-tcp)
-add_sub_project_deps(${name} ${path} "deps")
-
 #project vf-qml
 set(name vf-qml)
 set(path middleware/api)
-set(deps vein-framework vf-net2)
+set(deps vein-framework)
 add_sub_project_deps(${name} ${path} "deps")
 
 #project vf-cpp
@@ -146,7 +140,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project vf-script
 set(name vf-script)
 set(path backend/processing)
-set(deps vf-net2 vein-framework vf-qml)
+set(deps vein-framework vf-qml)
 add_sub_project_deps(${name} ${path} "deps")
 
 

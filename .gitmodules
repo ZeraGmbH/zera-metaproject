@@ -10,10 +10,6 @@
 	path = middleware/transport/xiqnet
 	url = git@github.com:ZeraGmbH/xiqnet.git
 	branch = master
-[submodule "middleware/transport/vf-net2"]
-	path = middleware/transport/vf-net2
-	url = git@github.com:ZeraGmbH/vf-net2.git
-	branch = master
 [submodule "middleware/transport/vf-tcp"]
 	path = middleware/transport/vf-tcp
 	url = git@github.com:ZeraGmbH/vf-tcp.git
