@@ -89,7 +89,7 @@
 	path = simple-parser
 	url = git@github.com:ZeraGmbH/simple-parser.git
 [submodule "backend/libs/bridgefmtspihelper"]
-	path = backend/libs/bridgefmtspihelper
+	path = bridgefmtspihelper
 	url = git@github.com:ZeraGmbH/bridgefmtspihelper.git
 [submodule "other/applications/zfpgatester"]
 	path = zfpgatester

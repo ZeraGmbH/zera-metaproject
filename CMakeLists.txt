@@ -179,11 +179,9 @@ set(path backend/libs)
 set(deps )
 add_sub_project_deps(${name} ${path} "deps")
 
-#project bridgefmtspihelper
 set(name bridgefmtspihelper)
-set(path backend/libs)
 set(deps )
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 #project zera-classes
 set(name zera-classes)
