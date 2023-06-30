@@ -51,13 +51,6 @@ set(path other)
 set(deps SortFilterProxyModel)
 add_sub_project_deps(${name} ${path} "deps")
 
-#project zera-resourcemanager-protobuf
-# This is a stupid backend/middleware dep
-set(name zera-resourcemanager-protobuf)
-set(path backend/libs)
-set(deps )
-add_sub_project_deps(${name} ${path} "deps")
-
 set(name zfpgatester)
 set(path other/applications)
 set(deps simple-parser)
@@ -85,7 +78,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project xiqnet
 set(name xiqnet)
 set(path middleware/transport)
-set(deps zera-resourcemanager-protobuf)
+set(deps )
 add_sub_project_deps(${name} ${path} "deps")
 
 #project vf-crypto-bridge
@@ -239,14 +232,14 @@ add_sub_project_deps(${name} ${path} "deps")
 #project zera-classes
 set(name zera-classes)
 set(path backend/libs)
-set(deps zenux-core zera-microcontroller vf-cpp zera-scpi zera-resourcemanager-protobuf xiqnet vein-framework zera-json-helpers)
+set(deps zenux-core zera-microcontroller vf-cpp zera-scpi xiqnet vein-framework zera-json-helpers)
 add_sub_project_deps(${name} ${path} "deps")
 
 
 ##Applications
 set(name zera-resourcemanager)
 set(path backend/applications)
-list(APPEND deps zera-scpi zera-resourcemanager-protobuf zera-classes)
+list(APPEND deps zera-scpi zera-classes)
 add_sub_project_deps(${name} ${path} "deps")
 
 
@@ -261,6 +254,6 @@ add_sub_project_deps(${name} ${path} "deps")
 
 set(name zenux-services)
 set(path backend/services)
-set(deps zera-scpi zera-resourcemanager-protobuf zera-classes)
+set(deps zera-scpi zera-classes)
 add_sub_project_deps(${name} ${path} "deps")
 

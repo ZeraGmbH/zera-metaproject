@@ -80,10 +80,6 @@
 	path = backend/libs/zera-classes
 	url = git@github.com:ZeraGmbH/zera-classes.git
 	branch = master
-[submodule "backend/libs/zera-resourcemanager-protobuf"]
-	path = backend/libs/zera-resourcemanager-protobuf
-	url = git@github.com:ZeraGmbH/zera-resourcemanager-protobuf.git
-	branch = master
 [submodule "backend/libs/zera-scpi"]
 	path = backend/libs/zera-scpi
 	url = git@github.com:ZeraGmbH/zera-scpi.git
