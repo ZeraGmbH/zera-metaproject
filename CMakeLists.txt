@@ -164,15 +164,9 @@ set(path other/utils)
 set(deps vein-framework vf-logger)
 add_sub_project_deps(${name} ${path} "deps")
 
-
-##zera-libs-and-services
-
-##Libs
-#project zera-scpi
 set(name zera-scpi)
-set(path backend/libs)
 set(deps )
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 set(name bridgefmtspihelper)
 set(deps )

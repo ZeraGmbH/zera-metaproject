@@ -65,7 +65,7 @@
 	url = git@github.com:ZeraGmbH/zera-classes.git
 	branch = master
 [submodule "backend/libs/zera-scpi"]
-	path = backend/libs/zera-scpi
+	path = zera-scpi
 	url = git@github.com:ZeraGmbH/zera-scpi.git
 	branch = master
 
