@@ -35,7 +35,7 @@
 	url = git@github.com:ZeraGmbH/vf-qmllibs.git
 	branch = master
 [submodule "frontend/libs/vf-gui-translation"]
-	path = frontend/libs/vf-gui-translation
+	path = vf-gui-translation
 	url = git@github.com:ZeraGmbH/vf-gui-translation.git
 	branch = master
 [submodule "backend/processing/vf-export"]

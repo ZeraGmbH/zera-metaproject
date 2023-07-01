@@ -102,16 +102,9 @@ set(name vf-files)
 set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
-#Frontend
-#########
-
-#libs
-
-#project vf-gui-translation
 set(name vf-gui-translation)
-set(path frontend/libs)
 set(deps)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 #project vf-qmllibs
 set(name vf-qmllibs)
