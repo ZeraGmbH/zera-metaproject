@@ -43,9 +43,8 @@ set(deps )
 add_sub_project_deps(${name} ${path} "deps")
 
 set(name fontawesome-qml)
-set(path other)
 set(deps SortFilterProxyModel)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 set(name zfpgatester)
 set(deps simple-parser)

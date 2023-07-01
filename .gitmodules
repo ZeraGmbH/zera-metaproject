@@ -66,7 +66,7 @@
 	url = git@github.com:ZeraGmbH/qtiohelper.git
 	branch = master
 [submodule "other/fontawesome-qml"]
-	path = other/fontawesome-qml
+	path = fontawesome-qml
 	url = git@github.com:schnitzeltony/fontawesome-qml.git
 	branch = master
 [submodule "other/SortFilterProxyModel"]
