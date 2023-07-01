@@ -26,9 +26,8 @@ set(deps )
 add_sub_project_deps(${name} . "deps")
 
 set(name zera-microcontroller)
-set(path backend/libs)
 set(deps zenux-core)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 set(name zera-json-helpers)
 set(deps)
