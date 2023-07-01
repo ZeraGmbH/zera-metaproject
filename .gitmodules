@@ -38,10 +38,6 @@
 	path = frontend/libs/vf-gui-translation
 	url = git@github.com:ZeraGmbH/vf-gui-translation.git
 	branch = master
-[submodule "backend/extern/PythonScriptingInterface"]
-	path = backend/extern/PythonScriptingInterface
-	url = git@github.com:ZeraGmbH/PythonScriptingInterface.git
-	branch = master
 [submodule "backend/processing/vf-export"]
 	path = vf-export
 	url = git@github.com:ZeraGmbH/vf-export.git
@@ -107,3 +103,6 @@
 [submodule "backend/libs/zera-microcontroller"]
 	path = zera-microcontroller
 	url = git@github.com:ZeraGmbH/zera-microcontroller.git
+[submodule "python-scripting-interface"]
+	path = python-scripting-interface
+	url = git@github.com:ZeraGmbH/python-scripting-interface.git

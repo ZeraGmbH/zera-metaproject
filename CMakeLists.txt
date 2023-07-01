@@ -76,11 +76,9 @@ add_sub_project_deps(${name} . "deps")
 
 #libs
 
-#project pythonscriptinginterface
-set(name PythonScriptingInterface)
-set(path backend/extern)
+set(name python-scripting-interface)
 set(deps )
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 set(name qtiohelper)
 set(deps )
@@ -97,7 +95,7 @@ add_sub_project_deps(${name} . "deps")
 
 
 set(name vf-export)
-set(deps vein-framework PythonScriptingInterface vf-logger)
+set(deps vein-framework python-scripting-interface vf-logger)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-files)
