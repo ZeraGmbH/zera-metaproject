@@ -70,7 +70,7 @@
 	branch = master
 
 [submodule "backend/libs/qtiohelper"]
-	path = backend/libs/qtiohelper
+	path = qtiohelper
 	url = git@github.com:ZeraGmbH/qtiohelper.git
 	branch = master
 [submodule "other/fontawesome-qml"]

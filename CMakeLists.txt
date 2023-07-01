@@ -51,12 +51,6 @@ set(name zfpgatester)
 set(deps simple-parser)
 add_sub_project_deps(${name} . "deps")
 
-
-#middleware
-###########
-
-#libs
-
 set(name vein-framework)
 set(deps )
 add_sub_project_deps(${name} . "deps")
@@ -92,14 +86,9 @@ set(path backend/extern)
 set(deps )
 add_sub_project_deps(${name} ${path} "deps")
 
-#project qtiohelper
 set(name qtiohelper)
-set(path backend/libs)
 set(deps )
-add_sub_project_deps(${name} ${path} "deps")
-
-
-#modules
+add_sub_project_deps(${name} . "deps")
 
 set(name vf-script)
 set(deps vein-framework)
