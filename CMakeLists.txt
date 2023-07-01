@@ -176,11 +176,7 @@ set(path other/utils)
 set(deps zera-scpi)
 add_sub_project_deps(${name} ${path} "deps")
 
-
-##Services
-
 set(name zenux-services)
-set(path backend/services)
 set(deps zera-scpi zera-classes)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 

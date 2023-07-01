@@ -96,7 +96,7 @@
 	url = git@github.com:ZeraGmbH/zfpgatester.git
 	branch = master
 [submodule "backend/services/zenux-services"]
-	path = backend/services/zenux-services
+	path = zenux-services
 	url = git@github.com:ZeraGmbH/zenux-services.git
 [submodule "middleware/vein-framework"]
 	path = vein-framework
