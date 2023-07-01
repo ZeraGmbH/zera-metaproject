@@ -106,7 +106,7 @@
 	path = other/utils/zera-resource-viewer
 	url = git@github.com:ZeraGmbH/zera-resource-viewer.git
 [submodule "backend/libs/zenux-core"]
-	path = backend/libs/zenux-core
+	path = zenux-core
 	url = git@github.com:ZeraGmbH/zenux-core.git
 [submodule "backend/libs/zera-microcontroller"]
 	path = backend/libs/zera-microcontroller

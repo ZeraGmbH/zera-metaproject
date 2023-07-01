@@ -22,9 +22,8 @@ endif()
 # place libs everything can depend on here
 
 set(name zenux-core)
-set(path backend/libs)
 set(deps )
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 set(name zera-microcontroller)
 set(path backend/libs)
