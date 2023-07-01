@@ -59,12 +59,8 @@ set(name vf-crypto-bridge)
 set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
-set(name vf-cpp)
-set(deps vein-framework)
-add_sub_project_deps(${name} . "deps")
-
 set(name vf-debugger)
-set(deps vein-framework vf-cpp)
+set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
 
@@ -101,11 +97,11 @@ add_sub_project_deps(${name} . "deps")
 
 
 set(name vf-export)
-set(deps vf-cpp PythonScriptingInterface vein-framework vf-logger)
+set(deps vein-framework PythonScriptingInterface vf-logger)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-files)
-set(deps vf-cpp)
+set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
 #Frontend
@@ -161,7 +157,7 @@ set(deps )
 add_sub_project_deps(${name} . "deps")
 
 set(name zera-classes)
-set(deps zenux-core zera-microcontroller vf-cpp zera-scpi vein-framework zera-json-helpers)
+set(deps zenux-core zera-microcontroller zera-scpi vein-framework zera-json-helpers)
 add_sub_project_deps(${name} . "deps")
 
 
