@@ -106,11 +106,9 @@ set(name vf-gui-translation)
 set(deps)
 add_sub_project_deps(${name} . "deps")
 
-#project vf-qmllibs
 set(name vf-qmllibs)
-set(path frontend/libs)
 set(deps SortFilterProxyModel vf-gui-translation)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 set(name vf-declarative-gui)
 set(deps vf-gui-translation vein-framework vf-logger vf-qmllibs zera-json-helpers)

@@ -31,7 +31,7 @@
 	url = git@github.com:ZeraGmbH/vf-declarative-gui.git
 	branch = master
 [submodule "frontend/libs/vf-qmllibs"]
-	path = frontend/libs/vf-qmllibs
+	path = vf-qmllibs
 	url = git@github.com:ZeraGmbH/vf-qmllibs.git
 	branch = master
 [submodule "frontend/libs/vf-gui-translation"]
