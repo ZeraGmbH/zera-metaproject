@@ -144,11 +144,9 @@ list(APPEND deps zera-scpi zera-classes)
 add_sub_project_deps(${name} . "deps")
 
 
-#project zera-resource-viewer
 set(name zera-resource-viewer)
-set(path other/utils)
 set(deps zera-scpi)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 set(name zenux-services)
 set(deps zera-scpi zera-classes)
