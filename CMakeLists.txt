@@ -38,7 +38,7 @@ set(deps )
 add_sub_project_deps(${name} . "deps")
 
 set(name SortFilterProxyModel)
-set(path other)
+set(path extern)
 set(deps )
 add_sub_project_deps(${name} ${path} "deps")
 

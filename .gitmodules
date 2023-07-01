@@ -70,7 +70,7 @@
 	url = git@github.com:schnitzeltony/fontawesome-qml.git
 	branch = master
 [submodule "other/SortFilterProxyModel"]
-	path = other/SortFilterProxyModel
+	path = extern/SortFilterProxyModel
 	url = git@github.com:schnitzeltony/SortFilterProxyModel.git
 	branch = master
 [submodule "other/zera-json-helpers"]
