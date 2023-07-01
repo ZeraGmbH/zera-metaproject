@@ -119,19 +119,9 @@ set(path frontend/libs)
 set(deps SortFilterProxyModel vf-gui-translation)
 add_sub_project_deps(${name} ${path} "deps")
 
-#applications
-
-#project zera-setup2
-#set(name zera-setup2)
-#set(path frontend/guis)
-#set(deps vein-framework vf-logger)
-#add_sub_project_deps(${name} ${path} "deps")
-
-#project vf-declarative-gui
 set(name vf-declarative-gui)
-set(path frontend/guis)
 set(deps vf-gui-translation vein-framework vf-logger vf-qmllibs zera-json-helpers)
-add_sub_project_deps(${name} ${path} "deps")
+add_sub_project_deps(${name} . "deps")
 
 #project vf-database-recorder
 set(name vf-database-recorder)

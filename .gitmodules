@@ -27,7 +27,7 @@
 	url = git@github.com:ZeraGmbH/vf-crypto-bridge.git
 	branch = master
 [submodule "frontend/guis/vf-declarative-gui"]
-	path = frontend/guis/vf-declarative-gui
+	path = vf-declarative-gui
 	url = git@github.com:ZeraGmbH/vf-declarative-gui.git
 	branch = master
 [submodule "frontend/libs/vf-qmllibs"]
