@@ -6,10 +6,7 @@ Superbuild project for close to all zera repos
 in your terminal:
 
 ```
-git clone <repo> 
-cd /<path>/<to>/<repo>
-git submodule update --init --recursive
-git submodule update --remote
+git clone --recurse-submodules git@github.com:ZeraGmbH/zera-metaproject.git
 ```
 
 to update
