@@ -54,10 +54,6 @@ set(name vein-framework)
 set(deps )
 add_sub_project_deps(${name} . "deps")
 
-set(name vf-crypto-bridge)
-set(deps vein-framework)
-add_sub_project_deps(${name} . "deps")
-
 set(name vf-debugger)
 set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
