@@ -74,6 +74,7 @@ macro(add_sub_project_deps name path _depends)
                     -DOE_QMAKE_PATH_EXTERNAL_HOST_BINS:STRING=${OE_QMAKE_PATH_EXTERNAL_HOST_BINS}
                 DEPENDS
                     ${deps_ext}
+                BUILD_ALWAYS TRUE
        )
     endif()
 endmacro()
