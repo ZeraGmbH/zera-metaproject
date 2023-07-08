@@ -58,19 +58,6 @@ set(name vf-debugger)
 set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
-
-#project vf-unittest2
-#set(name vf-unittest2)
-#set(path utils)
-#set(deps vein-framework vf-logger)
-#add_sub_project_deps(${name} ${path} "deps")
-
-
-#Backend
-#########
-
-#libs
-
 set(name python-scripting-interface)
 set(deps )
 add_sub_project_deps(${name} . "deps")
@@ -109,14 +96,16 @@ set(name vf-declarative-gui)
 set(deps vf-gui-translation vein-framework vf-logger vf-qmllibs zera-json-helpers)
 add_sub_project_deps(${name} . "deps")
 
-#project vf-database-recorder
+set(name vf-unittest2)
+set(path other/utils)
+set(deps vein-framework vf-logger)
+add_sub_project_deps(${name} ${path} "deps")
+
 set(name vf-database-recorder)
 set(path other/utils)
 set(deps vein-framework vf-logger)
 add_sub_project_deps(${name} ${path} "deps")
 
-
-#project vf-database-replay
 set(name vf-database-replay)
 set(path other/utils)
 set(deps vein-framework vf-logger)
