@@ -51,7 +51,7 @@ set(deps simple-parser)
 add_sub_project_deps(${name} . "deps")
 
 set(name vein-framework)
-set(deps )
+set(deps zenux-core)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-debugger)
