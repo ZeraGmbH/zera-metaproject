@@ -42,6 +42,7 @@ jobs:
           mkdir -p "$HOME/targetbuild"
           cd "$HOME/targetbuild"
           cmake $GITHUB_WORKSPACE \
+           -DCMAKE_BUILD_TYPE="Release" \
            -DCMAKE_PREFIX_PATH="$HOME/install/usr;/usr" \
            -DCMAKE_INSTALL_PREFIX:PATH="$HOME/install/usr" \
            -DCMAKE_INSTALL_SYSCONFDIR="$HOME/install/etc" \
