@@ -43,6 +43,11 @@ jobs:
           name: build-artifact
           workflow: buildAndExportArtifact.yml
 
+      - name: 'Untar build files'
+        run: |
+          pwd
+          tar -xvf build_files.tar.xz
+
       - name: Build
         run: |
           cd $HOME
