@@ -9,9 +9,6 @@ if (CMAKE_BUILD_TYPE STREQUAL "Debug")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG")
 endif()
 
-# There is no use-case for unittest here: this project is just BUILDING all
-set (SKIP_UNITTESTS ON)
-
 #general
 ##########
 

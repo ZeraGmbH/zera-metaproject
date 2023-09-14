@@ -64,7 +64,6 @@ macro(add_sub_project_deps name path _depends)
                     -DCMAKE_INSTALL_SYSCONFDIR:PATH=${CMAKE_INSTALL_SYSCONFDIR}
                     -DCMAKE_BUILD_TYPE:STRING=${CMAKE_BUILD_TYPE}
                     -DCMAKE_CXX_FLAGS:STRING=${CMAKE_CXX_FLAGS}
-                    -DSKIP_UNITTESTS:BOOL={SKIP_UNITTESTS}
                     -DOE_QMAKE_PATH_EXTERNAL_HOST_BINS:STRING=${OE_QMAKE_PATH_EXTERNAL_HOST_BINS}
                 DEPENDS
                     ${deps_ext}
