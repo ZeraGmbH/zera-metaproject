@@ -46,14 +46,13 @@ jobs:
 
       - name: 'Untar build files'
         run: |
+          mkdir -p "$HOME/targetbuild"
           if [ -e build_files.tar.xz ]; then
             tar -xvf build_files.tar.xz -C /
           fi
 
       - name: Build
         run: |
-          cd $HOME
-          mkdir -p "$HOME/targetbuild"
           cd "$HOME/targetbuild"
           cmake $GITHUB_WORKSPACE \
            -DCMAKE_BUILD_TYPE="Release" \
