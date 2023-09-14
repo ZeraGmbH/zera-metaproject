@@ -42,6 +42,7 @@ jobs:
           repo: ZeraGmbH/zera-metaproject
           name: build-artifact
           workflow: buildAndExportArtifact.yml
+        continue-on-error: true
 
       - name: 'Untar build files'
         run: |
