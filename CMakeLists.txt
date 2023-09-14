@@ -1,15 +1,9 @@
 cmake_minimum_required(VERSION 3.6)
 
-#set project name and language
 project(zera-metaproject LANGUAGES CXX)
-
-#Automoc and RCC ON. Needed in QT projects
-#set(CMAKE_AUTOMOC ON)
-#set(CMAKE_AUTORCC ON)
 
 include(ZeraSuperBuild.cmake)
 
-#activate QML Debugging if build type is Debug
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
     message(STATUS "QML Debugging is enabled. Please use this build only in a safe environment")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG")
