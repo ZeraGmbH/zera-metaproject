@@ -73,7 +73,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build-artifact
-          path: $HOME/build_files.tar.xz
+          path: /github/home/build_files.tar.xz
 
       - name: Upload install artifact
         uses: actions/upload-artifact@v3.1.2
