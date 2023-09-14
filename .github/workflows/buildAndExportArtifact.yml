@@ -98,7 +98,6 @@ jobs:
            -DCMAKE_PREFIX_PATH="$HOME/install/usr;/usr" \
            -DCMAKE_INSTALL_PREFIX:PATH="$HOME/install/usr" \
            -DCMAKE_INSTALL_SYSCONFDIR="$HOME/install/etc" \
-           -DSKIP_UNITTESTS=ON \
            -DfirstBuild=ON
           # compile / install
            make -i -j $(getconf _NPROCESSORS_ONLN)
