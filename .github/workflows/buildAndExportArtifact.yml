@@ -47,7 +47,7 @@ jobs:
         run: |
           mkdir -p "$GITHUB_WORKSPACE"
           if [ -e source_files.tar.xz ]; then
-            tar -xvf source_files.tar.xz -C /
+            tar -xf source_files.tar.xz -C /
             rm source_files.tar.xz
           fi
 
@@ -69,7 +69,7 @@ jobs:
         run: |
           mkdir -p "$HOME/targetbuild"
           if [ -e build_files.tar.xz ]; then
-            tar -xvf build_files.tar.xz -C /
+            tar -xf build_files.tar.xz -C /
             rm build_files.tar.xz
           fi
 
@@ -107,7 +107,7 @@ jobs:
           name: build-artifact
           path: /github/home/build_files.tar.xz
 
-      # Keep install files for actions of submodules (and incremental build TODO)
+      # Keep install files for actions of submodules (TODO first tar.xz)
       - name: Upload install artifact
         uses: actions/upload-artifact@v3.1.2
         with:
