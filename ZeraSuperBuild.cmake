@@ -27,16 +27,12 @@ if(firstBuild)
     endmacro()
 
     macro(pkg_check_modules)
-
     endmacro()
 
-
     macro(target_link_libraries)
-
     endmacro()
 
 endif()
-
 
 
 macro(add_sub_project_deps name path _depends)
@@ -48,11 +44,8 @@ macro(add_sub_project_deps name path _depends)
     if(NOT firstBuild)
         add_subdirectory(${CMAKE_SOURCE_DIR}/${path}/${name})
     else()
-        # We want to see the project in QT creator. Therefore we have to add the subdirectory
-        # But we do not want to use it. EXCLUDE_FROM_ALL suppresses build in this directory
-
-        # Lets build the project as external project now
-
+        # Build all submodules as exernal project and forward necessary cmake variables
+        #
         # Notes on OE_QMAKE_PATH_EXTERNAL_HOST_BINS:
         # * OE-on-target cmake files are tainted and rely on OE_QMAKE_PATH_EXTERNAL_HOST_BINS set
         #   to /usr/bin in Qt-Creator's default configuration. There is nothing we can do about
@@ -71,6 +64,7 @@ macro(add_sub_project_deps name path _depends)
                     -DCMAKE_INSTALL_SYSCONFDIR:PATH=${CMAKE_INSTALL_SYSCONFDIR}
                     -DCMAKE_BUILD_TYPE:STRING=${CMAKE_BUILD_TYPE}
                     -DCMAKE_CXX_FLAGS:STRING=${CMAKE_CXX_FLAGS}
+                    -DSKIP_UNITTESTS:BOOL={SKIP_UNITTESTS}
                     -DOE_QMAKE_PATH_EXTERNAL_HOST_BINS:STRING=${OE_QMAKE_PATH_EXTERNAL_HOST_BINS}
                 DEPENDS
                     ${deps_ext}
