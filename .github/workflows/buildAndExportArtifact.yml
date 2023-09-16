@@ -51,7 +51,7 @@ jobs:
           echo "Event name: "${{ github.event_name }}
 
       # Prepare source code for incremental build
-      - name: Download source artifact last build
+      - name: Download last source artifact last build
         if: ${{ github.event_name != 'workflow_dispatch' && github.event_name != 'schedule' }}
         uses: dawidd6/action-download-artifact@v2
         with:
@@ -76,7 +76,7 @@ jobs:
           submodules: recursive
 
       # Prepare last build files for incremental build
-      - name: Download build artifact
+      - name: Download last build artifact
         if: ${{ github.event_name != 'workflow_dispatch' && github.event_name != 'schedule' }}
         uses: dawidd6/action-download-artifact@v2
         with:
@@ -96,7 +96,7 @@ jobs:
           fi
 
       # Prepare last install files for incremental build
-      - name: Download install artifact
+      - name: Download last install artifact
         if: ${{ github.event_name != 'workflow_dispatch' && github.event_name != 'schedule' }}
         uses: dawidd6/action-download-artifact@v2
         with:
