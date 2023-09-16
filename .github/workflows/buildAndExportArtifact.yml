@@ -58,6 +58,7 @@ jobs:
           repo: ZeraGmbH/zera-metaproject
           name: source-artifact
           workflow: buildAndExportArtifact.yml
+          check_artifacts: true
         continue-on-error: true
 
       - name: 'Untar source files last build'
@@ -83,6 +84,7 @@ jobs:
           repo: ZeraGmbH/zera-metaproject
           name: build-artifact
           workflow: buildAndExportArtifact.yml
+          check_artifacts: true
         continue-on-error: true
 
       - name: 'Untar build files'
@@ -103,6 +105,7 @@ jobs:
           repo: ZeraGmbH/zera-metaproject
           name: install-artifact
           workflow: buildAndExportArtifact.yml
+          check_artifacts: true
         continue-on-error: true
 
       - name: 'Untar install files'
@@ -139,6 +142,7 @@ jobs:
         with:
           name: source-artifact
           path: /github/home/source_files.tar.xz
+          retention-days: 3
 
       # Keep build files for incremental build
       - name: 'Tar build files'
@@ -152,6 +156,7 @@ jobs:
         with:
           name: build-artifact
           path: /github/home/build_files.tar.xz
+          retention-days: 3
 
       # Keep install files for incremental build / for submodule actions -> mandatory
       - name: 'Tar install files'
@@ -163,6 +168,7 @@ jobs:
         with:
           name: install-artifact
           path: /github/home/install_files.tar.xz
+          retention-days: 3
 
       # Keep install files for actions of submodules
       - name: Upload install artifact (TODO remove)
@@ -170,3 +176,5 @@ jobs:
         with:
           name: buildroot
           path: /github/home/install/
+          retention-days: 3
+
