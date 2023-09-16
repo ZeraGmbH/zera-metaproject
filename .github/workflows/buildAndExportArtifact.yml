@@ -25,7 +25,8 @@ on:
 #
 # Some words on caching:
 # * When triggered by 'Update Submodule' sources, build-files and installed
-#   files are loaded to increase build times on daily business
+#   files are loaded to increase build times on daily business.
+#   To speed up, only install artefacts are generated and saved
 # * On other 'workflow_dispatch' (manual start) or 'schedule' no artifacts are
 #   downloaded so workflow builds from scratch
 
@@ -128,10 +129,12 @@ jobs:
 
       # Keep sources for incremental checkout
       - name: Tar sources
+        if: ${{ github.event_name != 'workflow_run' }}
         run: |
           time tar -c -I 'xz -T0' -f $HOME/source_files.tar.xz "$GITHUB_WORKSPACE"
 
       - name: 'Upload source artifact'
+        if: ${{ github.event_name != 'workflow_run' }}
         uses: actions/upload-artifact@v3
         with:
           name: source-artifact
@@ -139,16 +142,18 @@ jobs:
 
       # Keep build files for incremental build
       - name: 'Tar build files'
+        if: ${{ github.event_name != 'workflow_run' }}
         run: |
           time tar -c -I 'xz -T0' -f $HOME/build_files.tar.xz "$HOME/targetbuild"
 
       - name: 'Upload build artifact'
+        if: ${{ github.event_name != 'workflow_run' }}
         uses: actions/upload-artifact@v3
         with:
           name: build-artifact
           path: /github/home/build_files.tar.xz
 
-      # Keep install files for incremental build / submodule actions
+      # Keep install files for incremental build / for submodule actions -> mandatory
       - name: 'Tar install files'
         run: |
           time tar -c -I 'xz -T0' -f $HOME/install_files.tar.xz "$HOME/install"
