@@ -27,6 +27,7 @@ jobs:
       # Build
       - name: Build
         run: |
+          mkdir -p "$HOME/targetbuild"
           cd "$HOME/targetbuild"
           cmake $GITHUB_WORKSPACE \
            -DCMAKE_BUILD_TYPE="Release" \
