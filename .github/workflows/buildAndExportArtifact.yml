@@ -166,7 +166,7 @@ jobs:
 
       # Keep install files for actions of submodules
       - name: Upload install artifact (TODO remove)
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v3
         with:
           name: buildroot
           path: /github/home/install/
