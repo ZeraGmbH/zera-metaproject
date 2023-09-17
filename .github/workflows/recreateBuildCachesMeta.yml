@@ -50,6 +50,7 @@ jobs:
           retention-days: 1
 
       # Keep build files for incremental build
+      - name: Tar build files
         run: |
           tar -c -I 'xz -T0' -f $HOME/build_files.tar.xz "$HOME/targetbuild"
 
