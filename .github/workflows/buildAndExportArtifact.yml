@@ -48,18 +48,18 @@ jobs:
         uses: dawidd6/action-download-artifact@v2
         with:
           workflow: recreateBuildCachesMeta.yml
-          name: source-artifact
+          name: source-cache
           check_artifacts: true
         continue-on-error: true
 
       - name: 'Untar source files last build'
         run: |
           mkdir -p "$GITHUB_WORKSPACE"
-          if [ -e source_files.tar.xz ]; then
-            tar -xf source_files.tar.xz -C /
-            rm source_files.tar.xz
+          if [ -e source-cache-files.tar.xz ]; then
+            tar -xf source-cache-files.tar.xz -C /
+            rm source-cache-files.tar.xz
           else
-            echo 'source_files.tar.xz not found'
+            echo 'source-cache-files.tar.xz not found'
           fi
 
       - name: 'Checkout git'
@@ -72,18 +72,18 @@ jobs:
         uses: dawidd6/action-download-artifact@v2
         with:
           workflow: recreateBuildCachesMeta.yml
-          name: build-artifact
+          name: build-cache
           check_artifacts: true
         continue-on-error: true
 
       - name: 'Untar build files'
         run: |
           mkdir -p "$HOME/targetbuild"
-          if [ -e build_files.tar.xz ]; then
-            tar -xf build_files.tar.xz -C /
-            rm build_files.tar.xz
+          if [ -e build-cache-files.tar.xz ]; then
+            tar -xf build-cache-files.tar.xz -C /
+            rm build-cache-files.tar.xz
           else
-            echo 'build_files.tar.xz not found'
+            echo 'build-cache-files.tar.xz not found'
           fi
 
       # Prepare last install files for incremental build
@@ -91,17 +91,17 @@ jobs:
         uses: dawidd6/action-download-artifact@v2
         with:
           workflow: recreateBuildCachesMeta.yml
-          name: install-artifact
+          name: install-cache
           check_artifacts: true
         continue-on-error: true
 
       - name: 'Untar install files'
         run: |
-          if [ -e install_files.tar.xz ]; then
-            tar -xf install_files.tar.xz -C /
-            rm install_files.tar.xz
+          if [ -e install-cache-files.tar.xz ]; then
+            tar -xf install-cache-files.tar.xz -C /
+            rm install-cache-files.tar.xz
           else
-            echo 'build_files.tar.xz not found'
+            echo 'install-cache-files.tar.xz not found'
           fi
 
       # Build
