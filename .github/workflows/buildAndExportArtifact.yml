@@ -2,7 +2,7 @@ name: Build
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: [Update Submodule,Recreate build caches]
+    workflows: ["Update Submodule","Recreate build caches"]
     branches: [master]
     types: 
       - completed
