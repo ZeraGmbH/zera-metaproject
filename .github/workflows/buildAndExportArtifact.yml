@@ -129,11 +129,3 @@ jobs:
           path: /github/home/install_files.tar.xz
           retention-days: 1
 
-      # Keep install files for submodule actions (old / slow style)
-      - name: Upload install artifact (TODO remove)
-        uses: actions/upload-artifact@v3
-        with:
-          name: buildroot
-          path: /github/home/install/
-          retention-days: 1
-
