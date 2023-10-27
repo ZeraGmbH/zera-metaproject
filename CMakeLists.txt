@@ -108,6 +108,10 @@ set(name zera-scpi)
 set(deps )
 add_sub_project_deps(${name} . "deps")
 
+set(name zenux-legacy-components)
+set(deps zenux-core vein-framework zera-scpi)
+add_sub_project_deps(${name} . "deps")
+
 set(name bridgefmtspihelper)
 set(deps )
 add_sub_project_deps(${name} . "deps")
@@ -127,6 +131,6 @@ set(deps zera-scpi)
 add_sub_project_deps(${name} . "deps")
 
 set(name zenux-services)
-set(deps zera-scpi zera-classes)
+set(deps zenux-legacy-components)
 add_sub_project_deps(${name} . "deps")
 
