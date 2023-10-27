@@ -122,7 +122,7 @@ add_sub_project_deps(${name} . "deps")
 
 
 set(name zera-resourcemanager)
-list(APPEND deps zera-scpi zera-classes)
+set(deps zenux-legacy-components)
 add_sub_project_deps(${name} . "deps")
 
 
