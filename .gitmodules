@@ -102,3 +102,6 @@
 [submodule "python-scripting-interface"]
 	path = python-scripting-interface
 	url = git@github.com:ZeraGmbH/python-scripting-interface.git
+[submodule "zenux-legacy-components"]
+	path = zenux-legacy-components
+	url = git@github.com:ZeraGmbH/zenux-legacy-components.git
