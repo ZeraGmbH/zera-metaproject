@@ -30,6 +30,10 @@ set(name simple-parser)
 set(deps )
 add_sub_project_deps(${name} . "deps")
 
+set(name ble-playground)
+set(deps )
+add_sub_project_deps(${name} . "deps")
+
 set(name SortFilterProxyModel)
 set(path extern)
 set(deps )
@@ -117,7 +121,7 @@ set(deps )
 add_sub_project_deps(${name} . "deps")
 
 set(name zera-classes)
-set(deps zenux-core zera-microcontroller zera-scpi vein-framework zera-json-helpers)
+set(deps zenux-core zera-microcontroller zera-scpi vein-framework zera-json-helpers ble-playground)
 add_sub_project_deps(${name} . "deps")
 
 
