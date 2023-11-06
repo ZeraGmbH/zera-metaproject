@@ -89,7 +89,7 @@ set(deps SortFilterProxyModel vf-gui-translation)
 add_sub_project_deps(${name} . "deps")
 
 set(name zera-classes)
-set(deps zenux-core zera-microcontroller zera-scpi vein-framework zera-json-helpers zenux-legacy-components ble-playground qtiohelper)
+set(deps zenux-core zera-microcontroller zera-scpi vein-framework zera-json-helpers zenux-legacy-components qtiohelper vf-script vf-logger vf-export vf-files ble-playground)
 add_sub_project_deps(${name} . "deps")
 
 set(name zfpgatester)
