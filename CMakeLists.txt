@@ -9,11 +9,7 @@ if (CMAKE_BUILD_TYPE STREQUAL "Debug")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG")
 endif()
 
-#general
-##########
-
-# place libs everything can depend on here
-
+# without dependencies
 set(name zenux-core)
 set(deps )
 add_sub_project_deps(${name} . "deps")
@@ -55,8 +51,13 @@ set(name vf-gui-translation)
 set(deps )
 add_sub_project_deps(${name} . "deps")
 
+# with dependencies / others depend upon
 set(name vein-framework)
 set(deps zenux-core)
+add_sub_project_deps(${name} . "deps")
+
+set(name zenux-legacy-components)
+set(deps zenux-core vein-framework zera-scpi)
 add_sub_project_deps(${name} . "deps")
 
 set(name zera-microcontroller)
@@ -65,14 +66,6 @@ add_sub_project_deps(${name} . "deps")
 
 set(name fontawesome-qml)
 set(deps SortFilterProxyModel)
-add_sub_project_deps(${name} . "deps")
-
-set(name zfpgatester)
-set(deps simple-parser)
-add_sub_project_deps(${name} . "deps")
-
-set(name vf-debugger)
-set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-script)
@@ -91,16 +84,20 @@ set(name vf-files)
 set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
-set(name zenux-legacy-components)
-set(deps zenux-core vein-framework zera-scpi)
-add_sub_project_deps(${name} . "deps")
-
 set(name vf-qmllibs)
 set(deps SortFilterProxyModel vf-gui-translation)
 add_sub_project_deps(${name} . "deps")
 
 set(name zera-classes)
-set(deps zenux-core zera-microcontroller zera-scpi vein-framework zera-json-helpers zenux-legacy-components ble-playground)
+set(deps zenux-core zera-microcontroller zera-scpi vein-framework zera-json-helpers zenux-legacy-components ble-playground qtiohelper)
+add_sub_project_deps(${name} . "deps")
+
+set(name zfpgatester)
+set(deps simple-parser)
+add_sub_project_deps(${name} . "deps")
+
+set(name vf-debugger)
+set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
 set(name zera-resourcemanager)
