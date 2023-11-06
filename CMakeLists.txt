@@ -51,6 +51,10 @@ set(name bridgefmtspihelper)
 set(deps )
 add_sub_project_deps(${name} . "deps")
 
+set(name vf-gui-translation)
+set(deps )
+add_sub_project_deps(${name} . "deps")
+
 set(name vein-framework)
 set(deps zenux-core)
 add_sub_project_deps(${name} . "deps")
@@ -87,12 +91,28 @@ set(name vf-files)
 set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
-set(name vf-gui-translation)
-set(deps)
+set(name zenux-legacy-components)
+set(deps zenux-core vein-framework zera-scpi)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-qmllibs)
 set(deps SortFilterProxyModel vf-gui-translation)
+add_sub_project_deps(${name} . "deps")
+
+set(name zera-classes)
+set(deps zenux-core zera-microcontroller zera-scpi vein-framework zera-json-helpers zenux-legacy-components ble-playground)
+add_sub_project_deps(${name} . "deps")
+
+set(name zera-resourcemanager)
+set(deps zenux-legacy-components)
+add_sub_project_deps(${name} . "deps")
+
+set(name zera-resource-viewer)
+set(deps zera-scpi)
+add_sub_project_deps(${name} . "deps")
+
+set(name zenux-services)
+set(deps zenux-legacy-components)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-declarative-gui)
@@ -113,27 +133,4 @@ set(name vf-database-replay)
 set(path other/utils)
 set(deps vein-framework vf-logger)
 add_sub_project_deps(${name} ${path} "deps")
-
-
-set(name zenux-legacy-components)
-set(deps zenux-core vein-framework zera-scpi)
-add_sub_project_deps(${name} . "deps")
-
-set(name zera-classes)
-set(deps zenux-core zera-microcontroller zera-scpi vein-framework zera-json-helpers ble-playground)
-add_sub_project_deps(${name} . "deps")
-
-
-set(name zera-resourcemanager)
-set(deps zenux-legacy-components)
-add_sub_project_deps(${name} . "deps")
-
-
-set(name zera-resource-viewer)
-set(deps zera-scpi)
-add_sub_project_deps(${name} . "deps")
-
-set(name zenux-services)
-set(deps zenux-legacy-components)
-add_sub_project_deps(${name} . "deps")
 
