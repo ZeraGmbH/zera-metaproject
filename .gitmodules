@@ -105,3 +105,6 @@
 [submodule "zenux-legacy-components"]
 	path = zenux-legacy-components
 	url = git@github.com:ZeraGmbH/zenux-legacy-components.git
+[submodule "ble-playground"]
+	path = ble-playground
+	url = git@github.com:ZeraGmbH/ble-playground.git
