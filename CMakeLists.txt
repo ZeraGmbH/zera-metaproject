@@ -18,8 +18,8 @@ set(name zenux-core)
 set(deps )
 add_sub_project_deps(${name} . "deps")
 
-set(name zera-microcontroller)
-set(deps zenux-core)
+set(name zera-scpi)
+set(deps )
 add_sub_project_deps(${name} . "deps")
 
 set(name zera-json-helpers)
@@ -39,22 +39,6 @@ set(path extern)
 set(deps )
 add_sub_project_deps(${name} ${path} "deps")
 
-set(name fontawesome-qml)
-set(deps SortFilterProxyModel)
-add_sub_project_deps(${name} . "deps")
-
-set(name zfpgatester)
-set(deps simple-parser)
-add_sub_project_deps(${name} . "deps")
-
-set(name vein-framework)
-set(deps zenux-core)
-add_sub_project_deps(${name} . "deps")
-
-set(name vf-debugger)
-set(deps vein-framework)
-add_sub_project_deps(${name} . "deps")
-
 set(name python-scripting-interface)
 set(deps )
 add_sub_project_deps(${name} . "deps")
@@ -63,15 +47,37 @@ set(name qtiohelper)
 set(deps )
 add_sub_project_deps(${name} . "deps")
 
+set(name bridgefmtspihelper)
+set(deps )
+add_sub_project_deps(${name} . "deps")
+
+set(name vein-framework)
+set(deps zenux-core)
+add_sub_project_deps(${name} . "deps")
+
+set(name zera-microcontroller)
+set(deps zenux-core)
+add_sub_project_deps(${name} . "deps")
+
+set(name fontawesome-qml)
+set(deps SortFilterProxyModel)
+add_sub_project_deps(${name} . "deps")
+
+set(name zfpgatester)
+set(deps simple-parser)
+add_sub_project_deps(${name} . "deps")
+
+set(name vf-debugger)
+set(deps vein-framework)
+add_sub_project_deps(${name} . "deps")
+
 set(name vf-script)
 set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
-
 set(name vf-logger)
 set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
-
 
 set(name vf-export)
 set(deps vein-framework python-scripting-interface vf-logger)
@@ -108,16 +114,9 @@ set(path other/utils)
 set(deps vein-framework vf-logger)
 add_sub_project_deps(${name} ${path} "deps")
 
-set(name zera-scpi)
-set(deps )
-add_sub_project_deps(${name} . "deps")
 
 set(name zenux-legacy-components)
 set(deps zenux-core vein-framework zera-scpi)
-add_sub_project_deps(${name} . "deps")
-
-set(name bridgefmtspihelper)
-set(deps )
 add_sub_project_deps(${name} . "deps")
 
 set(name zera-classes)
