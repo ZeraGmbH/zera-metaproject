@@ -88,8 +88,12 @@ set(name vf-qmllibs)
 set(deps SortFilterProxyModel vf-gui-translation)
 add_sub_project_deps(${name} . "deps")
 
+set(name zenux-services)
+set(deps zenux-legacy-components)
+add_sub_project_deps(${name} . "deps")
+
 set(name zera-classes)
-set(deps zenux-core zera-microcontroller zera-scpi vein-framework zera-json-helpers zenux-legacy-components qtiohelper vf-script vf-logger vf-export vf-files ble-playground)
+set(deps zenux-core zera-microcontroller zera-scpi vein-framework zera-json-helpers zenux-legacy-components qtiohelper vf-script vf-logger vf-export vf-files ble-playground zenux-services)
 add_sub_project_deps(${name} . "deps")
 
 set(name zfpgatester)
@@ -106,10 +110,6 @@ add_sub_project_deps(${name} . "deps")
 
 set(name zera-resource-viewer)
 set(deps zera-scpi)
-add_sub_project_deps(${name} . "deps")
-
-set(name zenux-services)
-set(deps zenux-legacy-components)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-declarative-gui)
