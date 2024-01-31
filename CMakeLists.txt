@@ -27,7 +27,7 @@ set(deps )
 add_sub_project_deps(${name} . "deps")
 
 set(name ble-playground)
-set(deps )
+set(deps zenux-core)
 add_sub_project_deps(${name} . "deps")
 
 set(name SortFilterProxyModel)
