@@ -1,0 +1,29 @@
+#!/bin/sh
+which find
+
+QTEST_EXECS=`find $1 -executable -type f -name 'test_*'`
+QTEST_EXEC_COUNT=`echo $QTEST_EXECS | wc -w`
+
+GTEST_EXECS=`find $1 -executable -type f -name '*unittest*'`
+GTEST_EXEC_COUNT=`echo $GTEST_EXECS | wc -w`
+
+for qtest in $QTEST_EXECS; do
+    QTEST_CASES="$QTEST_CASES `$qtest -functions 2> /dev/null`"
+done
+QTEST_COUNT=`echo $QTEST_CASES | wc -w`
+
+
+for gtest in $GTEST_EXECS; do
+    GTEST_CASES="$GTEST_CASES `$gtest --gtest_list_tests 2> /dev/null | grep "^ "`"
+done
+GTEST_COUNT=`echo $GTEST_CASES | wc -w`
+
+echo
+echo "QTest executables: $QTEST_EXEC_COUNT"
+echo "GTest executables: $GTEST_EXEC_COUNT"
+echo
+echo "QTest test cases: $QTEST_COUNT"
+echo "GTest test cases: $GTEST_COUNT"
+echo
+echo "Total test cases `expr $QTEST_COUNT + $GTEST_COUNT`"
+

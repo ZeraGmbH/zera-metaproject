@@ -38,6 +38,11 @@ jobs:
           # compile / install
            make -i -j $(getconf _NPROCESSORS_ONLN)
 
+      # Test count
+      - name: We need more tests than followers on questionable career platforms
+        run: |
+          $GITHUB_WORKSPACE/count_tests $HOME/targetbuild
+
       # Keep sources for incremental checkout
       - name: Tar sources
         run: |
