@@ -1,5 +1,4 @@
 #!/bin/sh
-which find
 
 QTEST_EXECS=`find $1 -executable -type f -name 'test_*'`
 QTEST_EXEC_COUNT=`echo $QTEST_EXECS | wc -w`
