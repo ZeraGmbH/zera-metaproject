@@ -73,7 +73,7 @@ set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-logger)
-set(deps vein-framework)
+set(deps vein-framework vf-script)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-export)
@@ -93,7 +93,7 @@ set(deps zenux-legacy-components)
 add_sub_project_deps(${name} . "deps")
 
 set(name zera-classes)
-set(deps zenux-core zera-microcontroller zera-scpi vein-framework zera-json-helpers zenux-legacy-components qtiohelper vf-script vf-logger vf-export vf-files ble-playground zenux-services)
+set(deps zenux-core zera-microcontroller zera-scpi vein-framework zera-json-helpers zenux-legacy-components qtiohelper vf-logger vf-export vf-files ble-playground zenux-services)
 add_sub_project_deps(${name} . "deps")
 
 set(name zfpgatester)
