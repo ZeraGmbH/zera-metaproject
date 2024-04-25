@@ -68,12 +68,8 @@ set(name fontawesome-qml)
 set(deps SortFilterProxyModel)
 add_sub_project_deps(${name} . "deps")
 
-set(name vf-script)
-set(deps vein-framework)
-add_sub_project_deps(${name} . "deps")
-
 set(name vf-logger)
-set(deps vein-framework vf-script)
+set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-export)
@@ -121,13 +117,4 @@ set(path other/utils)
 set(deps vein-framework vf-logger)
 add_sub_project_deps(${name} ${path} "deps")
 
-set(name vf-database-recorder)
-set(path other/utils)
-set(deps vein-framework vf-logger)
-add_sub_project_deps(${name} ${path} "deps")
-
-set(name vf-database-replay)
-set(path other/utils)
-set(deps vein-framework vf-logger)
-add_sub_project_deps(${name} ${path} "deps")
 

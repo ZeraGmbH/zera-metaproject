@@ -2,10 +2,6 @@
 	path = vf-logger
 	url = git@github.com:ZeraGmbH/vf-logger.git
 	branch = master
-[submodule "backend/vf-script"]
-	path = vf-script
-	url = git@github.com:ZeraGmbH/vf-script.git
-	branch = master
 [submodule "middleware/utils/debugger"]
 	path = vf-debugger
 	url = git@github.com:ZeraGmbH/vf-debugger.git
@@ -13,14 +9,6 @@
 [submodule "other/utils/vf-unittest2"]
 	path = other/utils/vf-unittest2
 	url = git@github.com:ZeraGmbH/vf-unittest2.git
-	branch = master
-[submodule "other/utils/vf-database-recorder"]
-	path = other/utils/vf-database-recorder
-	url = git@github.com:ZeraGmbH/vf-database-recorder.git
-	branch = master
-[submodule "other/utils/vf-database-replay"]
-	path = other/utils/vf-database-replay
-	url = git@github.com:ZeraGmbH/vf-database-replay.git
 	branch = master
 [submodule "frontend/guis/vf-declarative-gui"]
 	path = vf-declarative-gui
