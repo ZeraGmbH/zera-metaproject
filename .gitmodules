@@ -96,3 +96,6 @@
 [submodule "ble-playground"]
 	path = ble-playground
 	url = git@github.com:ZeraGmbH/ble-playground.git
+[submodule "QtZeroConf"]
+	path = QtZeroConf
+	url = https://github.com/ZeraGmbH/QtZeroConf.git
