@@ -85,7 +85,7 @@ set(deps SortFilterProxyModel vf-gui-translation)
 add_sub_project_deps(${name} . "deps")
 
 set(name zenux-services)
-set(deps zenux-legacy-components)
+set(deps zenux-legacy-components simple-parser)
 add_sub_project_deps(${name} . "deps")
 
 set(name zera-classes)
