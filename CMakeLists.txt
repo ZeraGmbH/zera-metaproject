@@ -23,7 +23,7 @@ set(deps)
 add_sub_project_deps(${name} . "deps")
 
 set(name simple-parser)
-set(deps )
+set(deps zenux-core)
 add_sub_project_deps(${name} . "deps")
 
 set(name ble-playground)
