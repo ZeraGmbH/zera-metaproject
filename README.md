@@ -19,9 +19,11 @@ git submodule update --init --recursive
 * Open Edit / Preferences
 * Select default build directory as:
   ![Qt-Creator default build directory](doc/qc-default-build-directory.png)
-  Notes:
-  * Default path can be changed easily by replacing default '../' by build path of your choice
-  * Intention: Keep all build files in one directory -> build from scratch can be performed by deleting path
+  Example:
+  ```
+  /home/superandy/data/tmp/qtbuilds/build-%{Project:Name}-%{Kit:FileSystemName}-%{BuildConfig:Name}
+  ```
+  Intention: Keep all build files in one directory -> build from scratch can be performed by deleting path
 * Select Kits / Desktop / CMake Configuration as:
   ![Qt-Creator default CMake](doc/qc-default-cmake.png)
 * Add / modify CMake variables as:
@@ -32,6 +34,15 @@ git submodule update --init --recursive
   * **CMAKE_PREFIX_PATH**: ';' - separated CMake search prefix path. The directory set in **CMAKE_INSTALL_PREFIX** should be first entry
   * **OPERATOR_HOME**: Path where the license-files should be installed to and where user data is stored
 
+  Example CMake variables:
+  ```
+  -DCMAKE_PREFIX_PATH:PATH=/home/superandy/data/tmp/qtinstalls/usr;%{Qt:QT_INSTALL_PREFIX}
+  -DCMAKE_INSTALL_PREFIX:PATH=/home/superandy/data/tmp/qtinstalls/usr
+  -DCMAKE_INSTALL_SYSCONFDIR:PATHUNINITIALIZED=/home/superandy/data/tmp/qtinstalls/etc
+  -DOPERATOR_HOME:PATH=/home/superandy/data/tmp/qtinstalls/home/operator
+  ```
+* Make applications log appear in Qt-Creator by adding
+QT_ASSUME_STDERR_HAS_CONSOLE=1 to Kit's Environment
 
 ## Add Subproject to SuperBuild
 
