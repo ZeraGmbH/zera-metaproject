@@ -39,7 +39,7 @@ git submodule update --init --recursive
   -DCMAKE_PREFIX_PATH:PATH=/home/superandy/data/tmp/qtinstalls/usr;%{Qt:QT_INSTALL_PREFIX}
   -DCMAKE_INSTALL_PREFIX:PATH=/home/superandy/data/tmp/qtinstalls/usr
   -DCMAKE_INSTALL_SYSCONFDIR:PATHUNINITIALIZED=/home/superandy/data/tmp/qtinstalls/etc
-  -DOPERATOR_HOME:PATH=/home/superandy/data/tmp/qtinstalls/home/operator
+  -DOPERATOR_HOME:PATH=/home/superandy/data/tmp/operator
   ```
 * Make applications log appear in Qt-Creator by adding
 QT_ASSUME_STDERR_HAS_CONSOLE=1 to Kit's Environment
