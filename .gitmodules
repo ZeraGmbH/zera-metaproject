@@ -6,10 +6,6 @@
 	path = vf-debugger
 	url = git@github.com:ZeraGmbH/vf-debugger.git
 	branch = master
-[submodule "other/utils/vf-unittest2"]
-	path = other/utils/vf-unittest2
-	url = git@github.com:ZeraGmbH/vf-unittest2.git
-	branch = master
 [submodule "frontend/guis/vf-declarative-gui"]
 	path = vf-declarative-gui
 	url = git@github.com:ZeraGmbH/vf-declarative-gui.git

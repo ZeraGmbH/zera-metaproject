@@ -112,9 +112,4 @@ set(name vf-declarative-gui)
 set(deps vf-gui-translation vein-framework vf-logger vf-qmllibs zera-json-helpers simple-parser)
 add_sub_project_deps(${name} . "deps")
 
-set(name vf-unittest2)
-set(path other/utils)
-set(deps vein-framework vf-logger)
-add_sub_project_deps(${name} ${path} "deps")
-
 
