@@ -49,7 +49,7 @@ jobs:
           tar -c -I 'xz -T0' -f $HOME/source-cache-files.tar.xz "$GITHUB_WORKSPACE"
 
       - name: Upload source artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: source-cache
           path: /github/home/source-cache-files.tar.xz
@@ -61,7 +61,7 @@ jobs:
           tar -c -I 'xz -T0' -f $HOME/build-cache-files.tar.xz "$HOME/targetbuild"
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build-cache
           path: /github/home/build-cache-files.tar.xz
@@ -73,7 +73,7 @@ jobs:
           tar -c -I 'xz -T0' -f $HOME/install-cache-files.tar.xz "$HOME/install"
 
       - name: 'Upload install artifact'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: install-cache
           path: /github/home/install-cache-files.tar.xz

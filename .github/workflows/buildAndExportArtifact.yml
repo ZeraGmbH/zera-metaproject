@@ -122,7 +122,7 @@ jobs:
           tar -c -I 'xz -T0' -f $HOME/install_files.tar.xz "$HOME/install"
 
       - name: 'Upload install artifact'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: install-artifact
           path: /github/home/install_files.tar.xz
