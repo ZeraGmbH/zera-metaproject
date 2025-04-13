@@ -95,3 +95,6 @@
 [submodule "QtZeroConf"]
 	path = QtZeroConf
 	url = https://github.com/ZeraGmbH/QtZeroConf.git
+[submodule "extern/qhttpengine"]
+	path = extern/qhttpengine
+	url = git@github.com:ZeraGmbH/qhttpengine.git

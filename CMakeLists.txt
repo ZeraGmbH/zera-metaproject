@@ -35,6 +35,11 @@ set(path extern)
 set(deps )
 add_sub_project_deps(${name} ${path} "deps")
 
+set(name qhttpengine)
+set(path extern)
+set(deps )
+add_sub_project_deps(${name} ${path} "deps")
+
 set(name python-scripting-interface)
 set(deps )
 add_sub_project_deps(${name} . "deps")
