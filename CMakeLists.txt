@@ -117,4 +117,7 @@ set(name vf-declarative-gui)
 set(deps vf-gui-translation vein-framework vf-logger vf-qmllibs zera-json-helpers simple-parser)
 add_sub_project_deps(${name} . "deps")
 
+set(name rest-cpp-playground)
+set(deps qhttpengine zera-classes)
+add_sub_project_deps(${name} . "deps")
 
