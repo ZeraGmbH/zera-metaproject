@@ -15,7 +15,7 @@ set(deps )
 add_sub_project_deps(${name} . "deps")
 
 set(name zera-scpi)
-set(deps )
+set(deps zenux-core)
 add_sub_project_deps(${name} . "deps")
 
 set(name zera-json-helpers)
@@ -58,7 +58,7 @@ add_sub_project_deps(${name} . "deps")
 
 # with dependencies / others depend upon
 set(name vein-framework)
-set(deps zenux-core)
+set(deps zenux-core zera-json-helpers)
 add_sub_project_deps(${name} . "deps")
 
 set(name zenux-legacy-components)
