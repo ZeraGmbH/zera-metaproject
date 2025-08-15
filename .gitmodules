@@ -101,3 +101,7 @@
 [submodule "rest-cpp-playground"]
 	path = rest-cpp-playground
 	url = git@github.com:ZeraGmbH/rest-cpp-playground.git
+[submodule "reportjs-vue"]
+	path = reportjs-vue
+	url = git@github.com:ZeraGmbH/reportjs-vue.git
+	branch = master
