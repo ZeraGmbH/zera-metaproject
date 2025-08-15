@@ -17,6 +17,7 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
+          token: ${{ secrets.G_TRIGGER_WORKFLOW }}
       - name: store commit id before update
         run:  echo "COMMIT_ID=$(git rev-parse HEAD)" >> $GITHUB_ENV
       - name: Git Sumbodule Update
@@ -32,6 +33,6 @@ jobs:
           repo: meta-zera
           github_token: ${{ secrets.G_TRIGGER_WORKFLOW }}
           workflow_file_name: updateRecipes.yml
-          inputs: '{"commitid" : "${{ env.COMMIT_ID }}"}'  
+          inputs: '{"commitid" : "${{ env.COMMIT_ID }}"}'
           ref: master
           wait_interval: 30
