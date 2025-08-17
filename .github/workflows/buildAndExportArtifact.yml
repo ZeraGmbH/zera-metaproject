@@ -65,6 +65,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+          token: ${{ secrets.G_TRIGGER_WORKFLOW }}
 
       # Prepare last build files for incremental build
       - name: Download last build artifact
