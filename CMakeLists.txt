@@ -73,20 +73,20 @@ set(name fontawesome-qml)
 set(deps SortFilterProxyModel)
 add_sub_project_deps(${name} . "deps")
 
-set(name vf-logger)
-set(deps vein-framework)
-add_sub_project_deps(${name} . "deps")
-
-set(name vf-export)
-set(deps vein-framework python-scripting-interface vf-logger)
-add_sub_project_deps(${name} . "deps")
-
 set(name vf-files)
 set(deps vein-framework)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-qmllibs)
-set(deps SortFilterProxyModel vf-gui-translation)
+set(deps SortFilterProxyModel vf-gui-translation fontawesome-qml)
+add_sub_project_deps(${name} . "deps")
+
+set(name vf-logger)
+set(deps vein-framework vf-qmllibs)
+add_sub_project_deps(${name} . "deps")
+
+set(name vf-export)
+set(deps vein-framework python-scripting-interface vf-logger)
 add_sub_project_deps(${name} . "deps")
 
 set(name zenux-services)
