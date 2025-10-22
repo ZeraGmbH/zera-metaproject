@@ -105,6 +105,3 @@
 	path = reportjs-vue
 	url = git@github.com:ZeraGmbH/reportjs-vue.git
 	branch = master
-[submodule "qtqrcodegenerator"]
-	path = qtqrcodegenerator
-	url = git@github.com:ZeraGmbH/Qt-QrCodeGenerator.git

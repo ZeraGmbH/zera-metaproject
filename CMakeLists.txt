@@ -30,10 +30,6 @@ set(name ble-playground)
 set(deps zenux-core)
 add_sub_project_deps(${name} . "deps")
 
-set(name qtqrcodegenerator)
-set(deps )
-add_sub_project_deps(${name} . "deps")
-
 set(name SortFilterProxyModel)
 set(path extern)
 set(deps )
