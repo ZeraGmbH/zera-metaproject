@@ -59,6 +59,7 @@ macro(add_sub_project_deps name path _depends)
                 SOURCE_DIR ${CMAKE_SOURCE_DIR}/${path}/${name}
                 BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR}/${path}/${name}
                 CMAKE_CACHE_ARGS 
+                    -DQT_MAJOR_VER:STRING=${QT_MAJOR_VER}
                     -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_INSTALL_PREFIX}
                     -DCMAKE_PREFIX_PATH:PATH=${CMAKE_PREFIX_PATH}
                     -DCMAKE_INSTALL_SYSCONFDIR:PATH=${CMAKE_INSTALL_SYSCONFDIR}

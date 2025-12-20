@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.6)
 
 project(zera-metaproject LANGUAGES CXX)
 
+set(QT_MAJOR_VER "5" CACHE STRING "Qt major version")
+set(QTX "Qt${QT_MAJOR_VER}")
+
 include(ZeraSuperBuild.cmake)
 
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
