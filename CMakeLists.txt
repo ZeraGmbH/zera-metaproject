@@ -105,7 +105,7 @@ set(deps simple-parser)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-debugger)
-set(deps vein-framework)
+set(deps vein-framework SortFilterProxyModel)
 add_sub_project_deps(${name} . "deps")
 
 set(name zera-resourcemanager)
