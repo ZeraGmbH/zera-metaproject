@@ -9,7 +9,7 @@ include(ZeraSuperBuild.cmake)
 
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
     message(STATUS "QML Debugging is enabled. Please use this build only in a safe environment")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_QML_DEBUG")
 endif()
 
 # without dependencies
