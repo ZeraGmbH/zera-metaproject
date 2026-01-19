@@ -117,7 +117,7 @@ set(deps zera-scpi)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-declarative-gui)
-set(deps vf-gui-translation vein-framework vf-logger vf-qmllibs zera-json-helpers simple-parser)
+set(deps vf-gui-translation vein-framework vf-logger vf-qmllibs zera-json-helpers simple-parser zera-classes)
 add_sub_project_deps(${name} . "deps")
 
 set(name rest-cpp-playground)
