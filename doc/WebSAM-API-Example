@@ -1,0 +1,5 @@
+Grant access:
+curl -k https://<device-ip>:8083/api/v1/mts/Authorize --request POST --header "Content-Type: application/json" -u test:test -d '{ "name": "The one to rule them all", "tokenType": "UsernamePassword" }'
+
+Query actual values:
+curl -k -u test:test https://<device-ip>:8083/api/v1/refmeter/actualvalues
