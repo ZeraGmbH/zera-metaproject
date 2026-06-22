@@ -124,3 +124,7 @@ set(name rest-cpp-playground)
 set(deps qhttpengine zera-classes)
 add_sub_project_deps(${name} . "deps")
 
+set(name zupdate-framework)
+set(deps zenux-core)
+add_sub_project_deps(${name} . "deps")
+
