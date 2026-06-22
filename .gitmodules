@@ -111,3 +111,6 @@
 [submodule "zupdate-framework"]
 	path = zupdate-framework
 	url = git@github.com:ZeraGmbH/zupdate-framework.git
+[submodule "zera-setup2"]
+	path = zera-setup2
+	url = git@github.com:ZeraGmbH/zera-setup2.git
