@@ -108,3 +108,6 @@
 [submodule "qtqrcodegenerator"]
 	path = qtqrcodegenerator
 	url = git@github.com:ZeraGmbH/qtqrcodegenerator.git
+[submodule "zupdate-framework"]
+	path = zupdate-framework
+	url = git@github.com:ZeraGmbH/zupdate-framework.git
