@@ -120,6 +120,10 @@ set(name vf-declarative-gui)
 set(deps vf-gui-translation vein-framework vf-logger vf-qmllibs zera-json-helpers simple-parser zera-classes)
 add_sub_project_deps(${name} . "deps")
 
+set(name zera-setup2)
+set(deps vein-framework vf-qmllibs)
+add_sub_project_deps(${name} . "deps")
+
 set(name rest-cpp-playground)
 set(deps qhttpengine zera-classes)
 add_sub_project_deps(${name} . "deps")
