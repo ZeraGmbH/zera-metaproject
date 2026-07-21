@@ -46,11 +46,7 @@ if __name__ == "__main__":
     elif len(sys.argv) == 2:
         # Only input file provided
         in_file = sys.argv[1]
-
-        # Use pathlib to replace the extension with '.html'
-        # If there is no extension (e.g., just "logfile"), it appends '.html'
-        # It automatically saves to the same folder as the input file.
-        out_file = str(Path(in_file).with_suffix('.html'))
+        out_file = in_file + '.html'
     else:
         # No parameters provided, fall back to defaults
         in_file = "logfile"
