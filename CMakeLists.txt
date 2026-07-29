@@ -100,6 +100,10 @@ set(name zera-classes)
 set(deps zenux-core zera-microcontroller zera-scpi vein-framework zera-json-helpers zenux-legacy-components qtiohelper vf-logger vf-export vf-files ble-playground zenux-services)
 add_sub_project_deps(${name} . "deps")
 
+set(name com5003-lwl-bridge)
+set(deps zenux-legacy-components qtiohelper)
+add_sub_project_deps(${name} . "deps")
+
 set(name zfpgatester)
 set(deps simple-parser)
 add_sub_project_deps(${name} . "deps")
