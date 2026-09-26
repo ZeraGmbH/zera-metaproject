@@ -77,7 +77,7 @@ set(deps SortFilterProxyModel)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-files)
-set(deps vein-framework)
+set(deps vein-framework simple-parser)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-qmllibs)
