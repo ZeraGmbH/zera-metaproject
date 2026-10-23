@@ -117,3 +117,6 @@
 [submodule "com5003-lwl-bridge"]
 	path = com5003-lwl-bridge
 	url = git@github.com:ZeraGmbH/com5003-lwl-bridge.git
+[submodule "autobuilder-dut-testsuite"]
+	path = autobuilder-dut-testsuite
+	url = git@github.com:ZeraGmbH/autobuilder-dut-testsuite.git
