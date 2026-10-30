@@ -120,3 +120,6 @@
 [submodule "autobuilder-dut-testsuite"]
 	path = autobuilder-dut-testsuite
 	url = git@github.com:ZeraGmbH/autobuilder-dut-testsuite.git
+[submodule "linux-fslc"]
+	path = linux-fslc
+	url = git@github.com:ZeraGmbH/linux-fslc.git
