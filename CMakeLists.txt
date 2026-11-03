@@ -81,7 +81,7 @@ set(deps vein-framework simple-parser)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-qmllibs)
-set(deps SortFilterProxyModel vf-gui-translation fontawesome-qml)
+set(deps SortFilterProxyModel vf-gui-translation fontawesome-qml vf-files)
 add_sub_project_deps(${name} . "deps")
 
 set(name vf-logger)
